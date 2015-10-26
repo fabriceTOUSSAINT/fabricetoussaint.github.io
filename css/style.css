@@ -99,6 +99,15 @@ ul.social_icons li {
     background-color: #174B8D;
     max-height: 110px;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: #174B8D;
+    color: #fff;
+}
+.navbar-default .navbar-nav>li:nth-child(5)>a {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
 /* Hero
 ==========================*/
 .carousel-control.right, .carousel-control.left {
@@ -425,6 +434,8 @@ ol.carousel-indicators {
 }
 .social-icons a:nth-child(6) div img {
     padding-left: 4px;
+    max-height: 45px;
+    width: auto;
 }
 .social-icons a:nth-child(7) div img {
     padding-left: 4px;
@@ -534,7 +545,8 @@ p.copyright {
     padding-top: 86.5px;
 }
 .photos .dinner-button {
-    margin-bottom: 30px;
+    margin-bottom: 10px !important;
+    padding: 0 5px !important;
 }
 .photos .title {
     font-size: 1.2em;
@@ -570,6 +582,9 @@ p.copyright {
 .well {
     margin-top: 80px !important;
     margin-bottom: 80px !important;
+}
+.reach-out{
+    margin-top:170px;
 }
 /*================================================
 ==================================================
@@ -790,17 +805,51 @@ table.shedule-tab td {
        background-size:cover;
            background-repeat: no-repeat;
 }
+
 .header-dinner h1 {
     color: #fff;
-    font-size: 5em;
+    font-size: 3em;
     padding-top: 86.5px;
 }
 
 .contribute h4 {
     color: #8E8E8E;
     margin-bottom: 30px;
+} 
+
+.contact-form p a {
+    text-decoration: none;
+    color: #777;
 }
 
+.carousel-inner {
+    height: 700px;
+}
+
+
+
+.contact-photog {
+    color: #fff;
+    background: #4A71A9;
+    padding: 10px 15px !important;
+    text-decoration: none;
+}
+.contact-photog:hover, .contact-photog:focus {
+    color: #fff;
+    background: #406292;
+}
+
+.carousel-inner .item img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+.photog-info {
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+.copy{
+    color:#ccc;
+}
 /*================================================
 ==========***************************=============
 ==================================================
@@ -864,6 +913,11 @@ ol.carousel-indicators {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .navbar-default .navbar-nav>li:nth-child(5)>a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
 	 /* Header
 	==========================*/
 
@@ -883,10 +937,7 @@ ol.carousel-indicators {
 .tagline span {
     font-size: .8em;
 }
-.navbar-default .navbar-nav>li:nth-child(5)>a {
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
+
 .navbar-nav li:hover {
     background-color: #174B8d;
     max-height: 100px;
@@ -958,14 +1009,13 @@ figure:hover > a .pos .title {
 /*MEDIA PAGE
 =================*/
 .photos .title {
-    font-size: .8em;
+    font-size: 1.8em;
 }
 .photos figure:hover > a .pos .title {
-    font-size: 1em;
-    padding-bottom: 40% !important;
+    font-size: 1.8em;
 }
 .photos figure > a .pos .title {
-    font-size: .8em;
+    font-size: 1.8em;
 }
  /* ABOUT PAGE
  ===============*/
@@ -989,6 +1039,15 @@ figure:hover > a .pos .title {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .contact-photog{
+        float:none !important;
+    }
+    .photog-info{
+        text-align: center;
+    }
+    .navbar-nav li:hover {
+    max-height: unset;
+}
 	 /* Header
 	==========================*/
 .tagline {
@@ -1017,6 +1076,9 @@ ul.nav.navbar-nav.navbar-right li:nth-child(5) {
     height: 0;
     width: initial;
 }
+.header-game, .header-about, .header-media, .header-dinner, .header-contact, .header-contribute {
+    margin-top: 50px !important;
+    }
 	/* Hero
 	==========================*/
 	
@@ -1093,7 +1155,7 @@ h1.col-md-12.ben-head {
     padding-left: 0;
 }
 .footer-block {
-    height: 480px;
+    height: 500px;
 }
 .social-foot {
     margin-top: 0;
@@ -1125,7 +1187,7 @@ h1.col-md-12.ben-head {
     border: none;
 }
 .photos figure > a .pos .title {
-    font-size: .8em;
+    font-size: 1.8em;
 }
 
 /* ABOUT PAGE 
@@ -1133,7 +1195,31 @@ h1.col-md-12.ben-head {
 .purpose h4 {
     font-size: 1.5em;
     }
+
+
+
+
+.registration h1 {
+    font-size: 3em;
 }
+.location{
+    height:700px;
+}
+
+
+.reach-out {
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 0 150px;
+    margin-bottom: 80px;
+}
+
+
+
+}
+
+
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
@@ -1194,6 +1280,10 @@ h1.col-md-12.ben-head {
     height: 730px;
     background-position: 50%;
 }
+.photos figure > a .pos .title {
+    font-size: 1em;
+}
+}
 
 	/* footer
 	==========================*/
@@ -1201,12 +1291,6 @@ h1.col-md-12.ben-head {
 
 /* ABOUT PAGE
 =================*/
-.purpose h4 {
-    font-size: 1em;
-    padding-left: 50px;
-    padding-right: 50px;
-
-}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
