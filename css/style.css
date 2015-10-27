@@ -139,6 +139,9 @@ h1.video-header.col-xs-12 {
     margin-bottom: 20px;
     margin-top: 0;
 }
+.carousel{
+    height:575px;
+}
 
 /* Main Block
 ========================*/
@@ -714,6 +717,7 @@ table.shedule-tab td {
     margin-top: 30px;
     text-decoration: none;
     color:#fff;
+    background-color: #C0C0C0;
 }
 .photos h1, .videos h1 {
     font-size: 4em;
@@ -822,9 +826,7 @@ table.shedule-tab td {
     color: #777;
 }
 
-.carousel-inner {
-    height: 700px;
-}
+
 
 
 
@@ -1030,6 +1032,12 @@ figure:hover > a .pos .title {
 .team-mobile .payment-l, .team-mobile .payment-r {
     margin-top: initial;
 }
+.reach-out {
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 0px 50px;
+    margin-bottom: 80px;
+}
 
 
 }
@@ -1078,6 +1086,12 @@ ul.nav.navbar-nav.navbar-right li:nth-child(5) {
 }
 .header-game, .header-about, .header-media, .header-dinner, .header-contact, .header-contribute {
     margin-top: 50px !important;
+    }
+    .header-game h1, .header-about h1, .header-media h1,  .header-contact h1, .header-contribute h1 {
+    font-size: 3.5em;
+    }
+    .header-dinner h1 {
+        font-size:2.5em !important;
     }
 	/* Hero
 	==========================*/
@@ -1193,7 +1207,7 @@ h1.col-md-12.ben-head {
 /* ABOUT PAGE 
 =============*/
 .purpose h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     }
 
 
@@ -1210,11 +1224,16 @@ h1.col-md-12.ben-head {
 .reach-out {
     margin-top: 0 !important;
     text-align: center;
-    padding: 0 150px;
+    padding: 0px 10px !important;
     margin-bottom: 80px;
 }
 
-
+.item img {
+    max-height: 450px;
+}
+.carousel {
+    height: 475px;
+}
 
 }
 
