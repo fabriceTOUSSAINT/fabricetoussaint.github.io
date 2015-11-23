@@ -1,0 +1,33 @@
+/*================================================
+==================================================
+==================================================
+=               Media page                    =
+==================================================
+==================================================
+==================================================*/
+.header-media {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url("../img/AU2014webready/57.jpg");  
+      background-position: right 48%;
+    background-size:cover;
+    margin-top: -20px;
+        background-repeat: no-repeat;
+}
+.header-media h1 {
+    color: #fff;
+    font-size: 5em;
+    padding-top: 86.5px;
+}
+.photos .dinner-button {
+    margin-bottom: 10px !important;
+    padding: 0 5px !important;
+}
+.photos .title {
+    font-size: 1.2em;
+}
+.photos figure:hover > a .pos .title {
+    font-size: 1.8em;
+    padding-bottom: 40% !important;
+}

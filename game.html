@@ -26,7 +26,7 @@
 
 <body>
 
-    <!-- Static navbar -->
+        <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -36,7 +36,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hidden-xs" href="index.html"><img src="img/logo.png" alt="Hooptee celebrity golf classic "></a>
+          <div class="logo-brand">
+            <a class="navbar-brand hidden-sm hidden-md hidden-lg col-xs-4" href="index.html"><img class="mobile-logo" src="images/au-logo.png" alt="Achievements Unlimted"></a>
+
+            <a class="navbar-brand hidden-xs" href="index.html"><img src="images/au-logo.png" alt="Achievements Unlimted"></a>
+            <div class="row">
+              <a class="navbar-brand hidden-xs sub-logo" href="http://www.gatorade.com" target="_blank"><img src="img/head-gat.png" alt="Achievements Unlimted gatorade"></a>
+
+              <a class="navbar-brand hidden-xs sub-logo" href="http://www.nike.com/us/en_us/c/jordan" target="_blank"><img src="img/head-jord.png" alt="Achievements Unlimted jordan"></a>
+            </div>
+          </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -60,7 +69,6 @@
       <div class="subhead">
         <div class="container">
          <div class="row">
-             <a class="navbar-brand hidden-sm hidden-md hidden-lg col-xs-4" href="index.html"><img src="img/logo.png" alt="Hooptee celebrity golf classic "></a>
         <div class="col-md-6 col-md-offset-3  col-sm-6 col-sm-offset-3 col-xs-8 tagline">
           <span>13th Annual HOOPTEE® CELEBRITY GOLF CLASSIC, BALLANTYNE HOTEL, CHARLOTTE N.C. July 22nd - 24th, 2015
           </span>
@@ -341,5 +349,33 @@ Make checks payable to: HoopTee Charities, Inc</p>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+'use strict';
+
+var switchButton = document.querySelector('.switch-button');
+var switchBtnRight = document.querySelector('.switch-button-case.right');
+var switchBtnLeft = document.querySelector('.switch-button-case.left');
+var activeSwitch = document.querySelector('.active');
+
+function switchLeft() {
+    switchBtnRight.classList.remove('active-case');
+    switchBtnLeft.classList.add('active-case');
+    activeSwitch.style.left = '0%';
+}
+
+function switchRight() {
+    switchBtnRight.classList.add('active-case');
+    switchBtnLeft.classList.remove('active-case');
+    activeSwitch.style.left = '50%';
+}
+
+switchBtnLeft.addEventListener('click', function() {
+    switchLeft();
+}, false);
+
+switchBtnRight.addEventListener('click', function() {
+    switchRight();
+}, false);
+</script>
 </body>
 </html>

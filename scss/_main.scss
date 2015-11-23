@@ -1,0 +1,330 @@
+
+
+
+
+
+
+
+
+
+/*================================================
+==================================================
+==================================================
+=              contribute page                   =
+==================================================
+==================================================
+==================================================*/
+.header-contribute {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url('../img/headers/head2.png');
+    background-position: 0 75%;
+    margin-top: -20px;
+       background-size:cover;
+           background-repeat: no-repeat;
+}
+.header-contribute h1 {
+    color: #fff;
+    font-size: 5em;
+    padding-top: 86.5px;
+}
+.contribute {
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.contribute {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.contribute h3 {
+    margin-bottom: 20px;
+}
+.contribute .btn {
+    color: #fff;
+    background-color: #4A71A9;
+}
+.contribute .btn {
+    text-decoration: none;
+}
+.contribute .btn:hover {
+    background-color: #3C5984;
+}
+
+
+/*================================================
+==================================================
+==================================================
+=              Game       page                   =
+==================================================
+==================================================
+==================================================*/
+.header-game {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url('../img/headers/head4.png');
+    background-position: 0 50%;
+    margin-top: -20px;
+       background-size:cover;
+           background-repeat: no-repeat;
+}
+.header-game h1 {
+    color: #fff;
+    font-size: 5em;
+    padding-top: 86.5px;
+}
+.hotel {
+    text-align: center;
+    margin-top: 100px;
+}
+.hotel-img img {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.format h1, .schedule h1, .location h1{
+    font-size: 4em;
+}
+.format h1, .format h3,.schedule h1, .schedule h3, .location h1, .location p {
+    text-align: center;
+}
+.format h3, .schedule h3 {
+    margin: 30px 0;
+}
+.scramble li, .shoot-out li {
+    text-indent: 15px;
+}
+.format {
+    margin-top: 60px;
+    margin-bottom:80px;
+}
+.schedule{
+    margin-bottom:80px;
+}
+.time {
+    font-family: 'montserrat-ExtraBold';
+    width: 80px;
+}
+table.shedule-tab td {
+    padding-bottom: 15px;
+}
+.location{
+    background-image:url('../img/headers/head7.png');
+    width:100%;
+    height:550px;
+    color:#fff;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.location h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.location h4 {
+    font-size: 1.2em;
+}
+.location .btn:hover {
+    color: #fff;
+    background-color: #808080;
+    text-decoration: none;
+}
+.location .btn {
+    margin-top: 30px;
+    text-decoration: none;
+    color:#fff;
+    background-color: #C0C0C0;
+}
+.photos h1, .videos h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.registration h1, .registration h3, .registration h4 {
+    text-align: center;
+}
+.registration hr {
+    margin: 30px 10%;
+}
+.registration h3 {
+    margin-bottom: 20px;
+}
+.registration {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.registration h1 {
+    font-size: 4em;
+}
+.pay-icons i {
+    font-size: 1.5em;
+}
+.payment-l {
+    text-align: center;
+    margin-top: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+.payment-l .btn {
+    margin-top: 10px;
+    padding: 7px 30px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4A71A9;
+}
+.payment-l .btn:hover {
+    background-color: #3C5984;
+}
+.payment-r {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+.payment-r .btn, .fill-form .btn {
+    margin-top: 10px;
+    padding: 7px 30px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4A71A9;
+}
+.payment-r .btn:hover, .fill-form .btn:hover {
+    background-color: #3C5984;
+}
+.fill-form {
+    text-align: center;
+}
+.mailable{
+    text-align: center;
+    margin-top:20px;
+    color: #7B7B7B;
+}
+.fa-users, .fa-user {
+    font-size: 1.5em;
+}
+.team-mobile .payment-l, .team-mobile .payment-r {
+    margin-top: 35px;
+}
+.format i.fa.fa-circle {
+    padding-right: 5px;
+}
+/*================================================
+==================================================
+==================================================
+=              Dinners   page                   =
+==================================================
+==================================================
+==================================================*/
+.header-dinner {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url('../img/headers/head5.png');
+    background-position: 0 10%;
+    margin-top: -20px;
+       background-size:cover;
+           background-repeat: no-repeat;
+}
+
+.header-dinner h1 {
+    color: #fff;
+    font-size: 3em;
+    padding-top: 86.5px;
+}
+
+.contribute h4 {
+    color: #8E8E8E;
+    margin-bottom: 30px;
+} 
+
+.contact-form p a {
+    text-decoration: none;
+    color: #777;
+}
+
+
+
+
+
+.contact-photog {
+    color: #fff;
+    background: #4A71A9;
+    padding: 10px 15px !important;
+    text-decoration: none;
+}
+.contact-photog:hover, .contact-photog:focus {
+    color: #fff;
+    background: #406292;
+}
+
+.carousel-inner .item img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+.photog-info {
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+.copy{
+    color:#ccc;
+}
+
+/*TOGGLE BUTTON
+===================*/
+.switch-button {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate3D(-50%, 0, 0);
+    -ms-transform: translate3D(-50%, 0, 0);
+    transform: translate3D(-50%,0,0);
+    will-change: transform;
+    z-index: 197 !important;
+    cursor: pointer;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border: 1px solid black;
+    margin-top:50px;
+}
+.switch-button-case {
+    display: inline-block;
+    background: none;
+    width: 49%;
+    height: 100%;
+    color: #000;
+    position: relative;
+    border: none;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 1px;
+}
+.switch-button-case:hover {
+  color: grey;
+  cursor: pointer;
+}
+.switch-button-case:focus {
+  outline: none;
+}
+.switch-button .active {
+    color: #fff;
+    background-color: #151515;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .3s ease-out all;
+    transition: .3s ease-out all;
+}
+.switch-button .active-case {
+    color: #fff;
+}
+
+

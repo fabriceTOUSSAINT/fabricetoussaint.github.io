@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <title>video Page</title>
+</head>
+
+<body>
+
+
+<div id="content">
+  <div class="photos">
+    <div class="container">
+      <div class="row">
+
+
+        <h1 class="col-md-12">VIDEOS</div>
+
+
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a   href="videos/HoopTeeCelebrityGolfClassic2011.mp4" data-webm="videos/HoopTeeCelebrityGolfClassic2011.webm" class="vimeo" >
+                <img src="videos/previews/HoopTeeCelebrityGolfClassic2011.jpg">
+                <div class="pos"> 
+                  <span class="title">HoopTee Celebrity Golf Classic 2011</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2014.html">
+                <img id="vid1" src="img/imagegallery/thumb/2014.jpg">
+                <div class="pos"> 
+                  <span class="title">2014 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2013.html">
+                <img id="vid1" src="img/imagegallery/thumb/2013.jpg">
+                <div class="pos"> 
+                  <span class="title">2013 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2012.html">
+                <img id="vid1" src="img/imagegallery/thumb/2012.jpg">
+                <div class="pos"> 
+                  <span class="title">2012 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2011.html">
+                <img id="vid1" src="img/imagegallery/thumb/2011.jpg">
+                <div class="pos"> 
+                  <span class="title">2011 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2010.html">
+                <img id="vid1" src="img/imagegallery/thumb/2010.jpg">
+                <div class="pos"> 
+                  <span class="title">2010 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2008.html">
+                <img id="vid1" src="img/imagegallery/thumb/2008.jpg">
+                <div class="pos"> 
+                  <span class="title">2008 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2007.html">
+                <img id="vid1" src="img/imagegallery/thumb/2007.jpg">
+                <div class="pos"> 
+                  <span class="title">2007 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2006.html">
+                <img id="vid1" src="img/imagegallery/thumb/2006.jpg">
+                <div class="pos"> 
+                  <span class="title">2006 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2005.html">
+                <img id="vid1" src="img/imagegallery/thumb/2005.jpg">
+                <div class="pos"> 
+                  <span class="title">2005 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+         
+          <div class="dinner-button col-xs-6 col-md-3 vid-hover">
+            <figure>
+              <a href="photo-gallery-2004.html">
+                <img id="vid1" src="img/imagegallery/thumb/2004.jpg">
+                <div class="pos"> 
+                  <span class="title">2004 Gallery</span>
+                </div>
+              </a>
+            </figure>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src='js/script.js'></script>
+        <script src="js/jquery.colorbox-min.js"></script>
+         <script src="js/html5lightbox.js"></script>
+    <script>
+      $(document).ready(function(){
+        //Examples of how to assign the Colorbox event to elements
+        $(".group1").colorbox({rel:'group1'});
+        $(".group2").colorbox({rel:'group2', transition:"fade"});
+        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+        $(".group4").colorbox({rel:'group4', slideshow:true});
+        $(".ajax").colorbox();
+        $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+        $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+        $(".inline").colorbox({inline:true, width:"50%"});
+        $(".callbacks").colorbox({
+          onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+          onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+          onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+          onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+          onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+        });
+
+        $('.non-retina').colorbox({rel:'group5', transition:'none'})
+        $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+        
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function(){ 
+          $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+          return false;
+        });
+      });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+    	<meta charset="utf-8" />
+        
+    	<title>Gallery</title>
+       
+        
+        <style type="text/css">
+		
+				
+			body {
+			
+				margin: 0px;
+				padding: 0px;
+							
+			}
+		
+		</style>
+    
+        <link rel="stylesheet" type="text/css" href="css/cj_gallery.css?v=1" />
+        <link rel="stylesheet" type="text/css" href="css/cj_gallery_fixed_size.css?v=1" />
+        
+        <!-- CSS file for this slider preview -->
+        <link rel="stylesheet" type="text/css" href="css/cj_slider_preview.css" />
+        <!--[if lte IE 8 ]><link href="css/cj_gallery_ie_8.css?v=1" rel="stylesheet" type="text/css" /><![endif]-->
+        <!--[if lte IE 7 ]><link href="css/cj_gallery_ie_7.css?v=1" rel="stylesheet" type="text/css" /><![endif]-->
+        
+        <!--[if lte IE 7 ]>
+        
+			<style type="text/css">
+		
+                #cj-gallery #cj-gallery-controls {margin-bottom: -2px;}
+                #cj-gallery .cj-play-icon, #cj-gallery .cj-pause-icon, #cj-gallery .cj-right-icon {margin-left: 4px;}
+            
+            </style>        	
+        
+        <![endif]-->
+
+        <!-- Browser Scripts -->
+        <script src="js/modernizr.min.js" type="text/javascript"></script>
+        <script src="js/mdetect.min.js" type="text/javascript"></script>
+        
+        <!-- GalleryJack runs on jQuery 1.7.0, it has not been tested with legacy jQuery versions -->
+        <!-- Only one instance of jQuery should be loaded into a webpage -->
+    	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+        <!-- GalleryJack Scripts -->
+        <script type='text/javascript'>jQuery.noConflict();</script>
+        <script src="js/jquery.address-1.4.min.js" type="text/javascript"></script>
+        <script src="js/jquery.clip-animation.min.js" type="text/javascript"></script>
+        <script src="js/cj-galleryjack-core.min.js?v=1" type="text/javascript"></script>
+        
+       <!-- Custom gallery settings -->
+        <script type="text/javascript">
+			
+			// "true" for the fullscreen version, "false" for the fixed sized version
+			var cjFullScreenMode = false,
+			
+			/* The custom width if "cjFullScreenMode" is set to "false" */
+			cjCustomWidth = 780,
+		
+			/* The custom height if "cjFullScreenMode" is set to "false" */
+			cjCustomHeight = 600, 
+			
+			/* Choose to use thumbnails, true/false */
+			cjUseThumbs = false,
+			
+			/* Clicking the large image will load the next image, true/false */
+			cjBgClickLoadsNext = true,
+			
+			/* Choose to use deep-linking for images, true/false */
+			cjDeepLinkMode = false,
+			
+			/* "true" for the ajax version of the gallery, "false" for the regular version (see documentation for more details) */
+			cjAjaxVersion = false,
+			
+			/* Choose to autoplay the music, true/false */
+			cjAutoPlayMusic = false,
+			
+			/* Choose to show the image info when the gallery loads, true/false */
+			cjShowInfoByDefault = false;
+        
+        </script>
+        
+        <script src="js/cj-galleryjack-settings.js?v=1" type="text/javascript"></script>
+        
+        <!-- ************************************************** -->
+        <!-- END CODE TO COPY INTO THE HEAD TAG OF YOUR WEBPAGE -->
+        <!-- ************************************************** -->
+        
+	</head>
+    
+
+	<body>
+        
+               
+        <div id="container">
+            
+            <!-- ******************** -->
+            <!-- BEGIN GALLERY MARKUP -->
+            <!-- ******************** -->
+            
+            <div id="cj-gallery">
+                
+                <!-- <noscript><img class="cj-noscript" src="img/proau/0001.jpg" width="800" height="300" alt="" /></noscript> -->
+                
+                <!-- The image info container, delete entirely for no image info -->
+                <div id="cj-image-info">
+                    
+                    <!-- This can be deleted if you do not wish to use the close button icon -->
+                    <!--<span class="cj-close-info"></span>-->
+                    
+                    <!-- Leave this element blank.  It will be populated dynamically with image info -->
+                    <p id="cj-image-info-text"></p>
+                
+                </div>
+                
+                <!-- BEGIN FOOTER SECTION -->
+                <div id="cj-footer">
+                    
+                    <!-- The gallery controls, delete entirely for no controls -->
+                    <div id="cj-gallery-controls">
+ 
+                        <!-- All controls are optional.  Delete any controls you do not wish to use -->
+                      <span class="cj-left-icon"></span>
+                        <span class="cj-pause-icon"></span>
+                        <span class="cj-play-icon"></span>
+                        <span class="cj-right-icon"></span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <!-- ************************* -->
+                <!-- BEGIN GALLERY IMAGE LISTS -->
+                <!-- ************************* -->
+                <div id="cj-bg-images">
+                    
+                    <!-- BEGIN CATEGORY -->
+                    <!-- 
+                    
+                        "title" = The category title 
+                        
+                        "class" = The first value is for the image scaling type.  Options are:
+                        
+                                  1) cj-stretch (fill the screen, top-left position)
+                                  2) cj-stretch-center (fill the screen, center-center position)
+                                  3) cj-fit (show the entire image, the image will not be cropped, center-center position)
+                                  
+                                  The second value is for the transition type.  Options are
+                                  
+                                  1) cj-fade 
+                                  2) cj-slide
+                                  3) cj-slide-over
+                                  4) cj-wipe
+                                  
+                        "data-rel" = The width and height of the category thumbnails (first number = width, second number = height)
+                                  
+                    -->
+                    <ul title="models" class="cj-stretch cj-wipe">
+                        
+                        <!-- BEGIN IMAGE ITEM -->
+                        <li>
+                            
+                            <!-- BEGIN IMAGE DATA -->
+                            <ul>
+                                
+                                <!-- "title" = The url to the large background image -->
+                                <li class="cj-large" title="img/proau/0001.jpg"></li>
+                                
+                                <!-- For no info, delete entirely or leave empty -->
+                            	<!-- Info supports any HTML markup -->
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            <!-- END IMAGE DATA -->
+                            
+                        </li>
+                        <!-- END IMAGE ITEM -->
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0002.jpg"></li>
+                                
+                                <li class="cj-info">
+                                                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0003.jpg"></li>
+                                
+                                <li class="cj-info">
+                              
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0004.jpg"></li>
+                                
+                                <li class="cj-info">
+                               
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0005.jpg"></li>
+                                
+                                <li class="cj-info">
+                             
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0006.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0007.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0008.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+                            
+                        <li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0009.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+						<li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0010.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+						<li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0011.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+						<li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0012.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+						<li>
+                            
+                            <ul>
+                                    
+                                <li class="cj-large" title="img/proau/0013.jpg"></li>
+                                
+                                <li class="cj-info">
+                                
+                                    
+                                </li>
+                                    
+                            </ul>
+                            
+                        </li>
+        
+                    </ul>
+                    <!-- END CATEGORY -->
+                        
+                </div>
+                
+            </div>
+            
+            <!-- ****************** -->
+            <!-- END GALLERY MARKUP -->
+            <!-- ****************** -->
+        
+        </div>
+        
+    
+    </body>
+    
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
