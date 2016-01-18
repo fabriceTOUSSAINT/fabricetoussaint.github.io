@@ -77,7 +77,7 @@ h5 {
 .social-foot {
   margin-top: 18px;
   border-left: 1px solid rgba(255, 255, 255, 0.22);
-  padding-bottom: 45px; }
+}
 
 .social-icons a div img {
   padding-bottom: 7px; }
@@ -111,9 +111,7 @@ h5 {
 
 p.copyright {
   color: rgba(170, 129, 129, 0.48);
-  margin-left: -10%;
-  font-size: .8em;
-  margin-top: 20px; }
+ }
 
 /* Navigation bar
 =========================*/
@@ -190,6 +188,15 @@ ul.social_icons li {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
   background: #174B8D;
   color: #fff; }
+    background: #0c83e7;
+    padding: 80px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
 
 /*==========================================
 ===============base Imports============
@@ -772,6 +779,11 @@ section.container {
   font-size: 1.8em;
   padding-bottom: 40% !important; }
 
+.videos figure:hover > a .pos .title {
+    font-size: 1em !important;
+    padding-bottom: 35% !important;
+    padding-top: 50% !important;
+}
 /*================================================
 ==================================================
 ==================================================
@@ -852,6 +864,92 @@ i.fa.fa-asterisk {
   margin-top: -20px;
   background-repeat: no-repeat; }
 
+.owl-item {
+    width: auto !important;
+}
+#sync2 .item{
+    background: #C9C9C9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+#sync2 .item h1{
+  font-size: 18px;
+}
+#sync2 .synced .item{
+  background: #0c83e7;
+}
+/*TOGGLE BUTTON
+===================*/
+.switch-button {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate3D(-50%, 0, 0);
+    -ms-transform: translate3D(-50%, 0, 0);
+    transform: translate3D(-50%,0,0);
+    will-change: transform;
+    z-index: 197 !important;
+    cursor: pointer;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border: 1px solid black;
+    margin-top:50px;
+}
+.switch-button-case {
+    display: inline-block;
+    background: none;
+    width: 49%;
+    height: 100%;
+    color: #000;
+    position: relative;
+    border: none;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 1px;
+}
+.switch-button-case:hover {
+  color: grey;
+  cursor: pointer;
+}
+.switch-button-case:focus {
+  outline: none;
+}
+.switch-button .active {
+    color: #fff;
+    background-color: #151515;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .3s ease-out all;
+    transition: .3s ease-out all;
+}
+.switch-button .active-case {
+    color: #fff;
+}
+
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background: #151515;
+    color: #fff;
+}
+.photos h1, .videos h1 {
+    text-align: center;
+    margin: 30px 0;
+}
 /*================================================
 ==========***************************=============
 ==================================================
@@ -1178,6 +1276,9 @@ i.fa.fa-asterisk {
   .photos figure > a .pos .title {
     font-size: 1.8em; }
 
+.videos .title {
+    font-size: 1.2em;
+}
   /* ABOUT PAGE 
   =============*/
   .purpose h4 {
@@ -1271,8 +1372,50 @@ i.fa.fa-asterisk {
 
   .photos figure > a .pos .title {
     font-size: 1em; } }
-/* footer
+
+
+
+
+
+
+/* slider
 ==========================*/
+
+.slick-slide img {
+    display: block;
+    height: 500px;
+    width: auto;
+}
+
+.slider-nav img {
+    display: block;
+    height: 100px;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+.your-class img{
+  margin:0 3px;
+}
+.contact-photog {
+    font-size: 1.5em;
+    padding:15px 12px;
+}
+.photog-info h4 {
+    padding: 12px 15px;
+    color: #ccc;
+    font-size: 1.2em;
+}
+.slider-nav {
+  padding-top:40px;
+  padding-bottom:80px;
+}
+.your-class.slider.off-media-slider {
+    margin-top: 40px;
+}
+.staff h3{
+  text-align: center;
+}
 /* ABOUT PAGE
 =================*/
 /* Custom, iPhone Retina */

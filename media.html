@@ -53,7 +53,13 @@
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="players.html">PLAYERS</a></li>
             <li><a href="counselors.html">COUNSELORS</a></li>
-            <li class="active"><a href="#">MEDIA</a></li>
+            <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEDIA<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="media.html#photo">Photos</a></li>
+              <li><a href="media.html#video">Videos</a></li>
+            </ul>
+          </li>
             <li><a href="registration.html">REGISTRATION</a></li>
             <li><a href="contact.html">CONTACT</a></li>
             
@@ -93,21 +99,28 @@
 </div>
 
 <!-- Media -->
-
+<div class="container">
+  <div class-"row">
+      <div class="switch-button col-md-12"><span class="active active-tog"></span>
+        <a href="#photo"><button class="switch-button-case left active-case">Photos</button></a>
+        <a href="#video"><button class="switch-button-case right">Videos</button></a>
+      </div>
+    </div>
+  </div>
 
   <div class="photos">
     <div class="container">
       <div class="row">
 
 
-        <h1 class="col-md-12">PHOTOS</div>
+        <h1 class="col-md-12" id="photo">PHOTOS</div>
 
 
           
           <div class="dinner-button col-xs-6 col-md-3 vid-hover">
             <figure>
               <a href="photo-gallery-2014.html">
-                <img id="vid1" src="img/imagegallery/thumb/2014.jpg">
+                <img id="vid1" src="gallerybooth/img/imagegallery/thumb/2014prev.jpg">
                 <div class="pos"> 
                   <span class="title">2014 Gallery</span>
                 </div>
@@ -118,7 +131,7 @@
           <div class="dinner-button col-xs-6 col-md-3 vid-hover">
             <figure>
               <a href="photo-gallery-2012.html">
-                <img id="vid1" src="img/imagegallery/thumb/2012.jpg">
+                <img id="vid1" src="gallerybooth/img/imagegallery/thumb/2012prev.jpg">
                 <div class="pos"> 
                   <span class="title">2012 Gallery</span>
                 </div>
@@ -128,7 +141,7 @@
           <div class="dinner-button col-xs-6 col-md-3 vid-hover">
             <figure>
               <a href="photo-gallery-2011.html">
-                <img id="vid1" src="img/imagegallery/thumb/2011.jpg">
+                <img id="vid1" src="gallerybooth/img/imagegallery/thumb/2011prev.jpg">
                 <div class="pos"> 
                   <span class="title">2011 Gallery</span>
                 </div>
@@ -138,7 +151,7 @@
           <div class="dinner-button col-xs-6 col-md-3 vid-hover">
             <figure>
               <a href="photo-gallery-2010.html">
-                <img id="vid1" src="img/imagegallery/thumb/2010.jpg">
+                <img id="vid1" src="gallerybooth/img/imagegallery/thumb/2010prev.jpg">
                 <div class="pos"> 
                   <span class="title">2010 Gallery</span>
                 </div>
@@ -148,7 +161,7 @@
           <div class="dinner-button col-xs-6 col-md-3 vid-hover">
             <figure>
               <a href="photo-gallery-2009.html">
-                <img id="vid1" src="img/imagegallery/thumb/2008.jpg">
+                <img id="vid1" src="gallerybooth/img/imagegallery/thumb/2009prev.jpg">
                 <div class="pos"> 
                   <span class="title">2009 Gallery</span>
                 </div>
@@ -166,187 +179,58 @@
 <div class="videos">
   <div class="container">
     <div class="row">
-      <h1>VIDEOS</h1>
+      <h1 id="video">VIDEOS</h1>
                 <div class="dinner-button col-xs-6 col-md-4 vid-hover">
             <figure>
-              <a class="vimeo" href="videos/HoopTeeCelebrityGolfClassic2011.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/HoopTeeCelebrityGolfClassic2011.jpg" alt="Hardwoods Legend Dinner 2015 video">
+              <a class="vimeo" href="videos/25year/25year.mp4" title="25 Years">
+                <img src="videos/previews/25years.png" alt="25 Years">
                 <div class="pos"> 
-                  <span class="title">HoopTee Celebrity Golf Classic - 2011</span>
+                  <span class="title">25 Years</span>
                 </div>
               </a>
             </figure>
           </div>
                     <div class="dinner-button col-xs-6 col-md-4 vid-hover">
             <figure>
-              <a class="vimeo" href="videos/news64.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/news64.jpg" alt="Hardwoods Legend Dinner 2015 video">
+              <a class="vimeo" href="videos/2009_au_camp/2009_au_camp.mp4" title="2009 Athletes Unlimited camp">
+                <img src="videos/previews/2009_au_camp.png" alt="Acheivements Unlimited">
                 <div class="pos"> 
-                  <span class="title">HOOPTEE 2011 - News Ch 64</span>
+                  <span class="title">2009 Athletes Unlimited camp</span>
                 </div>
               </a>
             </figure>
           </div>
                     <div class="dinner-button col-xs-6 col-md-4 vid-hover">
             <figure>
-              <a class="vimeo" href="videos/news14SportsNight.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/news14SportsNight.jpg" alt="Hardwoods Legend Dinner 2015 video">
+              <a class="vimeo" href="videos/AU_VIDEO/AU_VIDEO.mp4" title="Atheletes Unlimited">
+                <img src="videos/previews/AU_VIDEO.png" alt="Acheivements Unlimited">
                 <div class="pos"> 
-                  <span class="title">HOOPTEE 2011 - Sports Night</span>
+                  <span class="title">Atheletes Unlimited</span>
                 </div>
               </a>
             </figure>
           </div>
                     <div class="dinner-button col-xs-6 col-md-4 vid-hover">
             <figure>
-              <a class="vimeo" href="videos/news14.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/news14.jpg" alt="Hardwoods Legend Dinner 2015 video">
+              <a class="vimeo" href="videos/CONGRATS_VIDEO/CONGRATS_VIDEO.mp4" title="Congrats">
+                <img src="videos/previews/CONGRATS_VIDEO.png" alt="Acheivements Unlimited">
                 <div class="pos"> 
-                  <span class="title">HOOPTEE 2011 - News Ch 14</span>
+                  <span class="title">Congrats</span>
                 </div>
               </a>
             </figure>
           </div>
                     <div class="dinner-button col-xs-6 col-md-4 vid-hover">
             <figure>
-              <a class="vimeo" href="videos/news9.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/news9.jpg" alt="Hardwoods Legend Dinner 2015 video">
+              <a class="vimeo" href="videos/video_hooptee/video_hooptee.mp4" title="HOOPTEE">
+                <img src="videos/previews/video_hooptee.png" alt="Acheivements Unlimited">
                 <div class="pos"> 
-                  <span class="title">HOOPTEE 2011 - News Ch 9</span>
+                  <span class="title">HOOPTEE</span>
                 </div>
               </a>
             </figure>
           </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/foxNews.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/foxNews.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">HOOPTEE 2011 - Fox News</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/hooptee2010.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/hooptee2010.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">HOOPTEE AU 2010 VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/hooptee-in-the-news.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/hooptee-in-the-news.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">HOOPTEE AU IN THE NEWS 2010</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/HOOPTEE VIDEO.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/HOOPTEE-VIDEO.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">HOOPTEE VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/HOOPTEE.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/HOOPTEE.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">ACHIEVEMENTS UNLIMITED</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/HOOPTEEAU-2008-VIDEO.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/HOOPTEEAU-2008-VIDEO.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">HOOPTEE AU 2008 VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/RECAP-AU-VIDE.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/RECAP-AU-VIDE.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">AU RECAP VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/AU1.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/AU1.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">AU VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/AU-VIDEO.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/AU-VIDEO.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">AU VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                              <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/CONGRATS-VIDEO.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/CONGRATS-VIDEO.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">CONGRATS VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/2009_au_camp.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/2009_au_camp.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">2009 AU CAMP VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                              <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/video_hooptee.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/video_hooptee.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">AU / HOOPTEE VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
-                    <div class="dinner-button col-xs-6 col-md-4 vid-hover">
-            <figure>
-              <a class="vimeo" href="videos/25year.mp4" title="HardWood Legends Dinner 2015">
-                <img src="videos/previews/25year.jpg" alt="Hardwoods Legend Dinner 2015 video">
-                <div class="pos"> 
-                  <span class="title">AU 25 YEARS VIDEO</span>
-                </div>
-              </a>
-            </figure>
-          </div>
+               
 
     </div>
   </div>
@@ -371,15 +255,17 @@
           <a href="http://www.gatorade.com" target="_blank"><img src="img/footer-gat-logo.png"></a>
         </div>
 
-        <div class="col-xs-12 col-sm-3 social-foot">
+
+        <div class="col-xs-12 col-sm-6 social-foot">
           <h1>CONNECT</h1>
           <div class="social-icons">
             <a href="https://www.facebook.com/Achievements-Unlimited-156044300809/" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://twitter.com/AUBBALLCLT" target="_blank"><i class="fa fa-twitter"></i></a>
            <a href="http://lavelleprodu.apfsite.com/" target="_blank"><div><img src="img/lavelle-logo.png"></div></a>
           </div>
-          <p class="copyright visible-xs">© 2015 Achievements Unlimited All Rights Reserved</p>
+          <p class="copyright">Copyright @2016 HoopTee CGC / LaVelle Productions</p>
         </div>
+
 
 
 
@@ -400,6 +286,46 @@
    
     $(".vimeo").colorbox({iframe:true, innerWidth:600, innerHeight:338});
   });
+      $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+    'use strict';
+
+var switchButton = document.querySelector('.switch-button');
+var switchBtnRight = document.querySelector('.switch-button-case.right');
+var switchBtnLeft = document.querySelector('.switch-button-case.left');
+var activeSwitch = document.querySelector('.active-tog');
+
+function switchLeft() {
+    switchBtnRight.classList.remove('active-case');
+    switchBtnLeft.classList.add('active-case');
+    activeSwitch.style.left = '0%';
+}
+
+function switchRight() {
+    switchBtnRight.classList.add('active-case');
+    switchBtnLeft.classList.remove('active-case');
+    activeSwitch.style.left = '50%';
+}
+
+switchBtnLeft.addEventListener('click', function() {
+    switchLeft();
+}, false);
+
+switchBtnRight.addEventListener('click', function() {
+    switchRight();
+}, false);
 </script>
 
    

@@ -12,3 +12,4 @@ $(window).bind('hashchange', function() {
 	newHash = window.location.hash.substr(1);
 	$mainContent.load(newHash + " #content > *");
 });
+
