@@ -1,0 +1,78 @@
+/* Navigation bar
+=========================*/
+
+.navbar {
+    background-color: #272727;
+    min-height: 100px;
+    border: none;
+}
+div#navbar {
+    height: 100px !important;
+}
+.navbar-nav li:hover {
+    background-color: #151515;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+     color: #fff;
+    background-color: #151515;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    padding:40px 30px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-brand > img {
+    display: block;
+    max-height: 75px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    padding: 40px 15px;
+}
+
+.sub-logo img {
+    max-width: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/*==subnav==*/
+.subhead {
+    background-color: #fff;
+    max-height: 50px;
+    height: 50px;
+}
+ul.social_icons {
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding-top: 7.5px;
+}
+ul.social_icons li {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.8em;
+}
+.social {
+    float: right;
+}
+.social_icons i {
+    color: #565656;
+}
+.social_icons i:hover {
+    color: #333333;
+}
+.tagline{
+	padding-top:5px;
+	text-align:center;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+     color: #fff;
+    background-color: #151515;    max-height: 110px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: #174B8D;
+    color: #fff;
+}

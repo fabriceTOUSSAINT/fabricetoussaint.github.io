@@ -1,0 +1,1086 @@
+/* LEGEND
+
+   1 - CSS RESET - (line #33)
+   
+   2 - GENERAL STYLES - (line #62)
+   
+   3 - TOP RIGHT SECTION - (line #132)
+   
+       3.1 - Icons - (line #173)
+	   3.2 - Music Player - (line #251)
+	   3.3 - Social Icons - (line #364)
+	   3.4 - Contact Form - (line #440)
+	   
+   4 - IMAGE DESCRIPTIONS - (line #554)
+   
+   5 - FOOTER SECTION - (line #630)
+   
+       5.1 - Gallery Controls (line #669)
+	   5.2 - Thumbnails - (line #821)
+	   5.3 - Category Buttons (line #932)
+   
+   6 - VIDEO LIGHTBOX (line #973)
+   
+   7 - MISCELLANEOUS (line #1056)
+   
+*/
+
+
+/* ...........................................................................   1   */
+
+/* ********************************** */
+/* ************ CSS RESET *********** */
+/* ********************************** */
+
+#cj-gallery ul, 
+#cj-gallery li, 
+#cj-gallery img, 
+#cj-gallery div, 
+#cj-gallery span,
+#cj-gallery h2, 
+#cj-gallery p,
+#cj-gallery a {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: normal;
+	
+}
+
+#cj-gallery li {
+
+	list-style-type: none;
+	
+}
+
+
+/* ...........................................................................   2   */
+
+/* ********************************** */
+/* ********* GENERAL STYLES ********* */
+/* ********************************** */
+
+/* Fullsize css, will be overriden by fixed sized if used */
+#cj-gallery {
+
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	color: #CCC;
+
+}
+
+#cj-gallery #cj-bg-images {
+			
+	display: none;
+				
+}
+
+/* General link style */
+#cj-gallery a {
+
+	text-decoration: none;
+	color: #FFF;
+	
+}
+
+#cj-gallery a:visited {
+
+	color: #FFF;
+
+}
+
+#cj-gallery a:hover {
+
+	text-decoration: underline;
+	
+}
+
+/* Cursive font class */
+.cj-cursive-font {
+
+	/*font-family: "Dancing Script", cursive !important;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px !important;
+	
+}
+
+/* Used for the "hit area" when clicking an image */
+.cj-bg-click {
+	
+	background-color: #000;
+	opacity: 0;
+	
+}
+
+/* Removes unwanted content highlighting */
+.cj-no-select {
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+}
+
+
+/* ...........................................................................   3   */
+
+/* ********************************** */
+/* ******** TOP RIGHT SECTION ******* */
+/* ********************************** */
+
+/* The top right container */
+#cj-gallery #cj-author-info {
+	
+	position: fixed;
+	visibility: hidden;
+	text-align: center;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+	
+}
+
+/* Top right main content container */
+.cj-top-right-content {
+
+	font-family:Arial, Helvetica, sans-serif;
+	color: #CCC;
+	
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+		
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.75);
+	
+	position: fixed;
+	top: 60px;
+	right: 20px;
+	
+	padding: 10px 15px 12px 15px !important;
+	display: none;
+	
+}
+
+
+/* ..........................................................................   3.1   */
+
+/* ----------------------------- */
+/* -------- BEGIN ICONS -------- */
+/* ----------------------------- */
+
+/* The image preloader */
+#cj-gallery #cj-preloader {
+	
+	float: left;
+	width: 35px;
+	height: 27px;
+	margin-right: 5px;
+	padding-top: 8px;
+	background: url(../img/cj_gallery/graphics/preloader_bg.png) no-repeat;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+		
+}
+
+/* The "gallery by" section */
+#cj-gallery #cj-info-button {
+	
+	float: left;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	margin-right: 5px;
+	background: url(../img/cj_gallery/graphics/info.png) no-repeat left bottom;
+	
+}
+
+/* The main email icon */
+#cj-gallery #cj-email-button {
+	
+	float: left;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	margin-right: 5px;
+	background: url(../img/cj_gallery/graphics/email.png) no-repeat left bottom;
+	
+}
+
+/* The main social share icon */
+#cj-gallery #cj-share-button {
+	
+	float: left;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	margin-right: 5px;
+	background: url(../img/cj_gallery/graphics/share.png) no-repeat left bottom;
+	
+}
+
+/* The main music icon */
+#cj-gallery #cj-music-button {
+	
+	float: left;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	/*background: url(../img/cj_gallery/graphics/music.png) no-repeat left bottom;*/
+	
+}
+
+/* Circle icon mouse over state */
+.cj-button-hover {
+
+	background-position: left top !important;
+	
+}
+
+
+/* ..........................................................................   3.2   */
+
+/* ----------------------------- */
+/* ---- BEGIN MUSIC PLAYER ----- */
+/* ----------------------------- */
+
+/* The music player container */
+#cj-gallery #cj-music-button {
+
+	display: inline-block;
+	
+}
+
+/* The music player meta data text */
+#cj-gallery #cj-music-meta {
+	float: left;
+	padding-top: 7px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 15px;	
+}
+
+/* iPad adjustment applied to the above rule */
+.cj-music-meta-fix {
+
+	padding-top: 5px !important;
+	
+}
+
+/* The music player current song text */
+#cj-gallery .cj-current-song {
+
+	margin-left: 6px;
+	
+}
+
+/* Music player controls container */
+#cj-gallery #cj-music-controls {
+	
+	float: left;
+	margin: 4px 0 -4px 12px;
+	
+}
+
+/* iPad adjustment applied to the above rule */
+.cj-music-fix {
+
+	margin-top: 1px !important;
+	
+}
+
+/* Class applied if no music meta data is used */
+.cj-music-controls-no-meta {
+
+	margin-left: 0 !important;
+	
+}
+
+/* The music player buttons */
+#cj-gallery .cj-music-left, 
+#cj-gallery .cj-music-right, 
+#cj-gallery .cj-music-pause, 
+#cj-gallery .cj-music-play {
+	
+	width: 22px;
+	height: 22px;
+	
+	cursor: pointer;
+	display: inline-block;
+	
+}
+
+/* The music player previous song button */
+#cj-gallery .cj-music-left {
+	
+	background: url(../img/cj_gallery/graphics/music_left.png) no-repeat left top;
+	
+}
+
+/* The music player next song button */
+#cj-gallery .cj-music-right {
+
+	background: url(../img/cj_gallery/graphics/music_right.png) no-repeat left top;
+	
+}
+
+/* The music player pause button */
+#cj-gallery .cj-music-pause {
+
+	background: url(../img/cj_gallery/graphics/music_pause.png) no-repeat left top;
+	
+}
+
+/* The music player play button */
+#cj-gallery .cj-music-play {
+
+	background: url(../img/cj_gallery/graphics/music_play.png) no-repeat left top;
+	display: none;
+	
+}
+
+/* Music player button hover state */
+#cj-gallery .cj-music-left:hover,
+#cj-gallery .cj-music-right:hover,
+#cj-gallery .cj-music-pause:hover,
+#cj-gallery .cj-music-play:hover {
+	
+	background-position: left bottom;
+	
+}
+
+
+/* ..........................................................................   3.3   */
+
+/* ----------------------------- */
+/* ---- BEGIN SOCIAL ICONS ----- */
+/* ----------------------------- */
+
+/* The facebook like button */
+#cj-gallery #cj-facebook { 
+
+	float: left; 
+	overflow: hidden; 
+	margin: 3px 0 -8px 0;
+	
+}
+
+/* Overrides some unwanted facebook behaviour applied to Mac browsers */
+.facebook-fix {
+
+	margin-right: 4px !important;
+	
+}
+
+/* Overrides some unwanted facebook behaviour applied to Mac browsers */
+.social-fix {
+
+	margin-bottom: -7px !important;
+	
+}
+
+/* The tweet button */
+#cj-gallery #cj-twitter { 
+
+	float: left; 
+	width: 78px; 
+	overflow: hidden;
+	margin: 3px 0 -8px -6px; 
+	
+}
+
+/* The Google Plus One Button */
+#cj-gallery #cj-google-plus {
+
+	float: left; 
+	margin: 3px 0 -8px 7px;
+	width: 59px;
+	overflow: hidden;
+	
+}
+
+/* Mobile environment fix */
+.cj-fix-gplus {
+
+	width: 75px !important;
+	
+}
+
+/* Applied to the small social icons */
+#cj-gallery #cj-twitter-icon,
+#cj-gallery #cj-facebook-icon,
+#cj-gallery #cj-google-icon { 
+
+	float: left; 
+	margin: 3px 0 -8px 7px; 
+	
+}
+
+/* Hover state for the small social icons */
+#cj-gallery #cj-facebook-icon:hover, 
+#cj-gallery #cj-twitter-icon:hover, 
+#cj-gallery #cj-google-icon:hover {
+
+	opacity: 0.75;
+	
+}
+
+
+/* ..........................................................................   3.4   */
+
+/* ----------------------------- */
+/* ---- BEGIN CONTACT FORM ----- */
+/* ----------------------------- */
+
+/* Contact form container */
+#cj-gallery #cj-contact-form {
+	
+	margin: 7px 0 5px 0;
+	
+}
+
+/* Reset for contact form fieldset */
+#cj-gallery #cj-contact-form fieldset {
+	
+	border: 0;
+	padding: 0;
+	
+}
+
+/* Contact form small text field */
+#cj-gallery #cj-contact-form input.cj-field {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #333;
+	color: #DDD;
+	
+	width: 290px;
+	border: 1px solid #555;
+	padding: 5px 4px 4px 4px;
+	margin-top: 5px;
+
+}
+
+/* Contact form first small text field */
+#cj-gallery #cj-contact-form input.cj-field:first-child {
+	
+	margin-top: 0;
+	
+}
+
+/* Contact form text area */
+#cj-gallery #cj-contact-form textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #333;
+	color: #DDD;
+	
+	width: 290px;
+	height: 200px;
+	
+	border: 1px solid #555;
+	padding: 5px 4px 4px 4px;
+	margin-top: 5px;
+	overflow: auto;
+	
+	min-width: 290px;
+	max-width: 290px;
+	min-height: 100px;
+    max-height: 250px;
+
+}
+
+/* Contact form submit button */
+#cj-gallery #cj-contact-form #cj-submit {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #333;
+	color: #DDD;
+	
+	padding: 4px 4px 3px 4px;
+	border: 1px solid #555;
+	margin-top: 4px;
+	
+	cursor: pointer;
+	outline: none;
+	float: right;
+	
+}
+
+/* Contact form submit button hover state */
+#cj-gallery #cj-contact-form #cj-submit:hover {
+	
+	color: #FFF;
+	
+}
+
+/* Removing focus outline applied by some browsers to contact fields */
+#cj-gallery #cj-contact-form textarea:focus,
+#cj-gallery #cj-contact-form #cj-submit:focus, 
+#cj-gallery #cj-contact-form input.cj-field:focus {
+
+	outline: none !important;
+	
+}
+
+/* Success message text */
+.cj-success-message {
+	font-family:Arial, Helvetica, sans-serif;
+	font: 13px;
+	margin-top: 8px !important;
+	float: left;
+	
+}
+
+/* Field focus style */
+.cj-field-focus {
+
+	background-color: #444 !important;
+	
+}
+
+
+/* ..........................................................................   4   */
+
+/* ********************************** */
+/* ******* IMAGE DESCRIPTIONS ******* */
+/* ********************************** */
+
+/* Image description main container */
+#cj-gallery #cj-image-info {
+	
+	position: fixed;
+	width: 300px;
+	display: none;
+	top: 20px;
+	left: 20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CCC;
+	padding: 15px 20px 20px 20px;
+	
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.75);
+	
+}
+
+/* Image description header style */
+#cj-gallery #cj-image-info h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #EEE;
+	
+	margin: 0;
+	margin-bottom: 5px;
+	
+}
+
+/* Image description paragraph style */
+#cj-gallery #cj-image-info p {
+	
+	line-height: 18px;
+	
+}
+
+/* Outline from links */
+#cj-gallery #cj-image-info a {
+	
+	outline: none !important;
+	
+}
+
+/* Image description close button */
+#cj-gallery .cj-close-info {
+	
+	float: right;
+	display: block;
+	margin: -4px -11px 0 0;
+	cursor: pointer;
+	
+	width: 8px;
+	height: 8px;
+	padding: 2px;
+	background: url(../img/cj_gallery/graphics/info_close.png) no-repeat left top;
+	
+}
+
+/* Image description close button hover state */
+#cj-gallery .cj-close-info:hover {
+	
+	background-position: left bottom;
+	
+}
+
+
+/* ...........................................................................   5   */
+
+/* ********************************** */
+/* ********* FOOTER SECTION  ******** */
+/* ********************************** */
+
+/* Main footer container */
+#cj-gallery #cj-footer {
+
+	position: fixed;
+	overflow: hidden;
+	visibility: hidden;
+	bottom: 0;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+}
+
+/* Footer content container */
+#cj-gallery #cj-footer-container {
+	
+	padding: 8px 8px 0 8px;
+	
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.75);
+	
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	
+}
+
+
+/* ..........................................................................   5.1   */
+
+/* ----------------------------- */
+/* ----- GALLERY CONTROLS ------ */
+/* ----------------------------- */
+
+/* Main gallery controls container */
+#cj-gallery #cj-gallery-controls {
+	
+	display: inline-block;
+	padding: 2px 6px 0 10px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.75);
+	
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	
+}
+
+/* IE Fix for controls */
+.cj-gc-fix {
+
+	padding-top: 4px !important;
+	
+}
+
+/* Previous image button */
+#cj-gallery .cj-left-icon {
+	
+	cursor: pointer;
+	display: inline-block;
+	padding: 2px;
+	
+	width: 7px;
+	height: 10px;
+	background: url(../img/cj_gallery/graphics/left_arrow.png) no-repeat left top;
+	
+}
+
+/* Next image button */
+#cj-gallery .cj-right-icon {
+	
+	margin-left: 3px;
+	cursor: pointer;
+	display: inline-block;
+	
+	padding: 2px;
+	
+	width: 7px;
+	height: 10px;
+	background: url(../img/cj_gallery/graphics/right_arrow.png) no-repeat left top;
+	
+}
+
+/* Image info button */
+#cj-gallery .cj-info-icon {
+	
+	margin-left: 2px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 2px 2px 1px 2px;
+	
+	width: 8px;
+	height: 13px;
+	background: url(../img/cj_gallery/graphics/info_icon.png) no-repeat left top;
+	
+}
+
+/* Style applied to info button when no image info is present */
+.cj-no-info-hover {
+
+	background-position: left top !important;
+	opacity: 0.5;
+	
+}
+
+/* Hide thumbnails button */
+#cj-gallery .cj-close-icon {
+	
+	margin-left: 2px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 2px;
+	
+	width: 10px;
+	height: 10px;
+	background: url(../img/cj_gallery/graphics/thumb_close.png) no-repeat left top;
+	
+}
+
+/* Show thumbnails button */
+#cj-gallery .cj-up-icon {
+	
+	margin-left: 2px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 2px;
+	
+	width: 10px;
+	height: 12px;
+	background: url(../img/cj_gallery/graphics/up_arrow.png) no-repeat left top;
+	
+}
+
+/* Pause slideshow button */
+#cj-gallery .cj-pause-icon {
+	
+	margin-left: 3px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 2px;
+	
+	width: 6px;
+	height: 10px;
+	background: url(../img/cj_gallery/graphics/pause_icon.png) no-repeat left top;
+	
+}
+
+/* Play slideshow button */
+#cj-gallery .cj-play-icon {
+	
+	margin-left: 3px;
+	cursor: pointer;
+	display: inline-block;
+	
+	padding: 1px 2px 2px 2px;
+	
+	width: 6px;
+	height: 10px;
+	background: url(../img/cj_gallery/graphics/play_icon.png) no-repeat left top;
+	
+}
+
+/* Gallery control buttons hover state */
+#cj-gallery .cj-left-icon:hover, 
+#cj-gallery .cj-close-icon:hover, 
+#cj-gallery .cj-right-icon:hover,
+#cj-gallery .cj-info-icon:hover,
+#cj-gallery .cj-play-icon:hover,
+#cj-gallery .cj-pause-icon:hover,
+#cj-gallery .cj-up-icon:hover,
+#cj-gallery .cj-close-info:hover {
+	
+	background-position: left bottom;
+	
+}
+
+/* Applied when thumbnailas and categories are not used */
+.cj-footer-controls-only {
+
+	padding-top: 0 !important;
+	
+}
+
+
+/* ..........................................................................   5.2   */
+
+/* ----------------------------- */
+/* -------- THUMBNAILS --------- */
+/* ----------------------------- */
+
+/* Main thumbnail container */
+#cj-gallery  #cj-thumb-container {
+
+	clear: both;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+/* Thumbnail strip container */
+.cj-thumb-div {
+
+	float: left;
+	margin-left: 8px !important;
+	border: 1px solid #BBB !important;
+	position: relative !important;
+	overflow: hidden !important;
+	
+}
+
+/* Applied to first thumb */
+.cj-thumb-div-first {
+
+	margin-left: 0 !important;
+	
+}
+
+/* Applied to thumbnail images */
+.cj-thumb-image {
+
+	position: absolute !important;
+	display: none;
+	
+}
+
+/* Thumbnail mouse over effect */
+.cj-thumb-hover {
+	
+	position: absolute !important;
+	background: #000 url(../img/cj_gallery/graphics/thumb_hover.png) no-repeat center center !important;
+	
+}
+
+/* Thumbnail tooltips */
+#cj-gallery #cj-thumb-tooltip {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	
+	color: #000;
+	background-color: #E5E5E5;
+	padding: 5px 8px 5px 8px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	position: fixed;
+	white-space: nowrap;
+	display: none;
+	z-index: 1;
+	
+}
+
+/* Thumb slider left button */
+.cj-thumb-left {
+	
+	width: 25px;
+	height: 25px;
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	background: url(../img/cj_gallery/graphics/thumb_left.png) no-repeat left top;
+	margin: 0 0 0 -5px !important;
+
+	
+}
+
+/* Thumb slider right button */
+.cj-thumb-right {
+	
+	width: 25px;
+	height: 25px;
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	background: url(../img/cj_gallery/graphics/thumb_right.png) no-repeat left top;
+	margin: 0 0 0 5px !important;
+
+}
+
+/* Thumb slider button hover state */
+.cj-thumb-arrow-hover {
+
+	background-position: left bottom;
+	
+}
+
+/* Applied when no thumbnails are used */
+.cj-no-thumbnails {
+
+	margin-top: 0px !important;
+	
+}
+
+
+/* ..........................................................................   5.3   */
+
+/* ----------------------------- */
+/* ----- CATEGORY BUTTONS ------ */
+/* ----------------------------- */
+
+/* Main category button container */
+#cj-gallery #cj-categories {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #CCC;
+	
+	text-align: center;
+	margin-top: 6px;
+	padding-bottom: 6px;
+	
+}
+
+/* The category button */
+.cj-category {
+
+	display: inline-block !important;
+	padding: 0 14px 0 14px !important;
+	
+}
+
+/* The category button hover state */
+.cj-category:hover {
+
+	opacity: 0.75;
+	
+}
+
+/* Style applied when categories are not used */
+.cj-no-categories {
+
+	padding-bottom: 8px !important;
+	
+}
+
+
+/* ...........................................................................   6   */
+
+/* ********************************** */
+/* ******** VIDEO LIGHTBOX  ********* */
+/* ********************************** */
+
+/* The "play video" button that appears over the current gallery image */
+.cj-video-button {
+
+	background: url(../img/cj_gallery/graphics/video_play.png) no-repeat left top;
+	width: 50px;
+	height: 50px;
+	
+	position: fixed;
+	visibility: hidden;
+	
+}
+
+/* The hover style for the play video button */
+.cj-video-button:hover {
+
+	background-position: left bottom;
+	
+}
+
+/* The lightbox dim */
+.cj-video-lightbox {
+
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.65);
+	position: fixed;
+	display: none;
+	z-index: 1001;
+	
+}
+
+/* The styles applied to the iframe used for YouTube and Vimeo content */
+.cj-video-iframe {
+
+	padding: 7px;
+	margin: -8px 0 0 -8px;
+	border: 1px solid #FFF;
+	background: /*#F5F5F5*/ url(../img/cj_gallery/graphics/video_preloader.gif) no-repeat center center;
+	z-index: 1002;
+	
+	-moz-box-shadow: inset 0 0 3px 3px #DDD;
+	-webkit-box-shadow: inset 0 0 3px 3px #DDD;
+	box-shadow: inset 0 0 3px 3px #DDD;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+}
+
+/* The close button that appears toward the bottom right of the video */
+.cj-video-close {
+
+	width: 34px;
+	height: 25px;
+	background: url(../img/cj_gallery/graphics/video_close.png) no-repeat left top;
+	position: fixed;
+	display: none;
+	
+	margin: 8px 0 0 -34px !important;
+	cursor: pointer;
+	z-index: 2000;
+	
+}
+
+/* The video close button hover state */
+.cj-video-close:hover {
+
+	background-position: left bottom;
+	
+}
+
+
+/* ...........................................................................   7   */
+
+/* ********************************** */
+/* ********* MISCELLANEOUS  ********* */
+/* ********************************** */
+
+/* Applied to noscript background image */
+.cj-noscript {
+
+	z-index: -1000;
+	
+}
+
+/* Preload some icons */
+#cj-gallery #cj-preload {
+	
+	position: fixed;
+	visibility: hidden;
+	font-family:Arial, Helvetica, sans-serif;
+	/*font-family: "Dancing Script", cursive;*/
+	
+}
+
+
+
+
+
+
+

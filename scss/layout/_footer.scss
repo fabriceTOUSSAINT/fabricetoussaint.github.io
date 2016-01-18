@@ -1,0 +1,91 @@
+/* Footer Block
+========================*/
+.footer-block {
+    height: 200px;
+    background-color: #2a2a2a;
+
+}
+
+.foot-sponsor a img {
+    position: relative;
+    display: block;
+    max-height: 75px;
+}
+.foot-sponsor {
+    margin-top: 60px;
+}
+.social-foot h1 {
+    color: #AA8181;
+    font-family: 'Montserrat-Light';
+    font-size: 2em;
+}
+
+.social-icons i, .social-icons div {
+    background-color: #AA8181;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 2px;
+    font-size: 2.5em;
+        -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+}
+.social-icons .fa {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+.social-icons i:hover, .social-icons div:hover {
+    background-color: #906262;
+    cursor: pointer;
+}
+.social-icons div {
+    padding-left: 2px;
+    display: inline-block;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #2A2A2A;
+}
+.social-foot {
+    margin-top: 18px;
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+    padding-bottom: 45px;
+}.social-icons a div img {
+    padding-bottom: 7px;
+}
+.social-icons a:nth-child(3) div img {
+    padding-left: 4px;
+    max-height: 45px;
+    width: auto;
+    margin-bottom: 17px;
+    margin-top: 10px;
+}
+
+.music {
+    margin-top: 40px;
+    padding-left:8.333%;
+}
+.music h4, .music p a {
+    color: #AA8181;
+    margin-left: -5%;
+    text-decoration: none;
+}
+.music p a:hover, .music span a:hover {
+    color: #7D5F5F;
+}
+.music span a {
+    color: #AD8B8B;
+    display: block;
+    margin-bottom: 2px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size:.8em;
+}
+p.copyright {
+    color: rgba(170, 129, 129, 0.48);
+    margin-left: -10%;
+    font-size: .8em;
+    margin-top: 20px;
+}
