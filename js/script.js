@@ -13,7 +13,6 @@ $(window).bind('hashchange', function() {
 	$mainContent.load(newHash + " #content > *");
 });
 
-<<<<<<< HEAD
 // Only run everything once the page has completely loaded
 $(window).load(function(){
 
@@ -94,5 +93,3 @@ $(window).load(function(){
         toGalleryItem($targetItem);
     });
 });
-=======
->>>>>>> 64915be2d4a84acb8d2544027e8a83f05dd634f0
