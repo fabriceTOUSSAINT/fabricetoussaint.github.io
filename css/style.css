@@ -1643,10 +1643,6 @@ background-color: #D6D6D6;
     background-color: #2a2a2a;
     border: 30px solid #2a2a2a;
     border-radius: 10px;
-    background-image: url('../top/logo.png');
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: center;
 }
 .couns-list .player-wrapper h3{
       box-shadow: 0px 0px 3px 0px #000 !important;
