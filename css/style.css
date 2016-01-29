@@ -1598,7 +1598,10 @@ background-color: #D6D6D6;
 
 
 
-
+/*++========================
+============================
+=======REVISIONS==============
+======================*/
 
 /* slider
 ==========================*/
@@ -1676,23 +1679,18 @@ background-color: #D6D6D6;
 .over-block:hover {
     cursor: pointer;
 }
-/* ABOUT PAGE
-=================*/
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
- /* Header
-==========================*/
-  /* Hero
-  ==========================*/
-  /* video-block
-  ==========================*/
-  /* dinners-block
-  ==========================*/
-  /* about
-  ==========================*/
-  /* ben-block
-  ==========================*/
-  /* footer
-  ==========================*/ }
 
-/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
