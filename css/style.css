@@ -34,9 +34,11 @@ h5 {
   background-color: #2a2a2a; }
 
 .foot-sponsor a img {
-  position: relative;
-  display: block;
-  max-height: 75px; }
+    position: relative;
+    display: block;
+    max-height: 75px;
+    margin-left: -20px;
+}
 
 .foot-sponsor {
   margin-top: 60px; }
