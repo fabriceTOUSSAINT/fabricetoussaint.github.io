@@ -1129,6 +1129,7 @@ li.dropdown.active.open {
   background-color:#ccc;
    color: #2a2a2a;
    max-width:250px;
+
 }
 
 .tooltip.top .tooltip-arrow {
@@ -1656,9 +1657,9 @@ background-color: #D6D6D6;
     height: 400px;
     line-height: 3em;
     overflow: auto;
-    padding: 5px;
+    padding: 30px;
     background-color: #2a2a2a;
-    border: 30px solid #2a2a2a;
+    border: 25px solid #2a2a2a;
     border-radius: 10px;
 }
 .couns-list .player-wrapper h3{
