@@ -1,0 +1,125 @@
+body{
+	background-color:#f7f7f7;
+}
+
+#cfg-contactform{
+	width:600px;
+	margin:auto;
+	padding:30px;
+	border:1px solid #EEE;
+	background-color:#FFF;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.ui-datepicker{
+	font-size:9pt !important;
+}
+
+.element{
+	margin-right:10px;
+	margin-bottom:6px;
+	padding:2px 2px 4px 4px;
+}
+
+.cfg-label{
+	display:block;
+}
+
+.cfg-captcha-img{
+	border:1px solid #ddd;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.cfg-submit{
+	cursor:pointer;
+	padding:8px 4px;
+	-moz-border-radius:5px;
+	-khtml-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+.cfg-option-container input[type=radio], .cfg-option-container input[type=checkbox]{
+	margin-right:6px;
+}
+
+.cfg-required{
+	color:#990000;
+	margin-right:6px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.cfg-uploadsuccess-container{
+	margin-top:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+}
+.cfg-deleteupload{
+	color:#ff0033;
+	margin-left:10px;
+	cursor:pointer;
+}
+.cfg-deleteupload:hover{
+	text-decoration:underline;
+}
+
+/***** VALIDATION & ERROR MESSAGES *****/
+
+#cfg-loading{
+	display:none;
+	background:url('../img/loading.gif') no-repeat 0 1px;
+	padding-left:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+
+.cfg-errormessage, .cfg-validationmessage{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.cfg-errormessage{
+	display:none;
+	margin:4px 0;
+	width:260px;
+}
+
+.cfg-validationmessage{
+	width:360px;
+	margin-bottom:16px;
+	padding:10px 6px;
+}
+
+
+#element-49{
+	font-family:Arial;
+	font-size:1.3em;
+	font-weight:bold;
+	border-width:1px;
+	border-style:solid;
+	width:140px;
+	color:#555555;
+	background-color:#f1f1f1;
+	border-color:#cccccc;
+}
+
+#element-49:hover{
+	color:#555555;
+	background-color:#f1f1f1;
+	border-color:#cccccc;
+}
+
+.cfg-validationmessage{background-color:#339900; color:#fff;}
+
+.cfg-errormessage{background-color:#cc0000; color:#fff; padding:4px 6px;}
+

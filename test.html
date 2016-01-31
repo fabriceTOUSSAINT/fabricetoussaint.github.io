@@ -97,52 +97,31 @@
     <h1>2004 GALLERY</h1> 
   </div>
 </div>
-<div class="container photog-info">
+<!-- <div class="container photog-info">
   <div class="row">
   <h4 class="col-xs-12 col-sm-6 copy">Photography: <i class="fa fa-copyright"></i> LaVelle Productions</h4>
     <a  class=" pull-right btn contact-photog" href="#" id="mail-photo">Contact Photogapher</a>
   </div>
 </div>
+<div class="container photog-info">
+    <a  class="btn contact-photog" href="#" id="mail-photo">Contact Photogapher</a>
+  
+</div> -->
 
 
-
-<div class="your-class slider">
-  <div><div class="over-block" data-toggle="modal" data-target="#myModal"></div><img src="gallerybooth/img/imagegallery/2009/image1.jpg"></div>
-  <div><div class="over-block" data-toggle="modal" data-target="#myModal"></div><img src="gallerybooth/img/imagegallery/2009/image2.jpg"></div>
-  <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image4.jpg"></div>
-  <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image5.jpg"></div>
-  <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image6.jpg"></div>
-  <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image7.jpg"></div>
-  <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image8.jpg"></div>
-  <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image9.jpg"></div>
-    <div><div class="over-block"></div><img src="gallerybooth/img/imagegallery/2009/image10.jpg"></div>
+<div class="your-class slider" id="here">
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image1.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image2.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image4.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image5.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image6.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image7.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image8.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image9.jpg"></div>
+  <div><div class="over-block" type="button"></div><img src="gallerybooth/img/imagegallery/2009/image10.jpg"></div>
 
 </div>
 
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -159,10 +138,6 @@
     <div><img src="gallerybooth/img/imagegallery/2009/image10.jpg"></div>
 </div>
 
-
-
-                  <a href="http://www.onnit.com/?a_aid=evolution2014&a_bid=4cd976ff"
-                  target="_top"><img src="/wp-content/uploads/2016/01/JR_468x60-1.gif"/></a>
 
 
 
@@ -206,67 +181,7 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-
 <script src="js/bootstrap.min.js"></script>
-
-
-<script>
-$(document).ready(function() {
-
-
-  function selectPhoto(){
-    $('.your-class').slick('slickPause', 'true');
-    var currSrc = $('.slick-active img').attr('src');
-    var httpsAddr ="file:///Users/fabricetoussaint/Desktop/Code/projects/AU/site/";
-    var mail ="mailto:someone@yoursite.com?subject=Interested%20In%20Photo&body=";
-    var fullSrc = httpsAddr.concat(currSrc);
-
-    var yourMessage = "Hello, I'm interested in this photo: " + fullSrc;
-    var subject = "Interested in a photo";
-    document.location.href = "mailto:fabtoussaint@gmail.com?subject="
-        + encodeURIComponent(subject)
-        + "&body=" + encodeURIComponent(yourMessage);
-
-  }
-
-
-  $("#mail-photo").click(selectPhoto);
-
-
-
-      $('.your-class').slick({
-  dots: false,
-  infinite: true,
-//  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true,
-  slidesToScroll: 1,
-    autoplay: false,
-// autoplaySpeed: 2000,
- arrows: false,
-asNavFor: '.slider-nav',
-autoplaySpeed: 0,
- speed: 12000,
-  cssEase: 'linear'
-
-
-
-});
-     $('.slider-nav').slick({
-  slidesToShow: 7,
-  slidesToScroll: 1,
-  asNavFor: '.your-class',
-  dots: false,
-  centerMode: true,
-  arrows: false,
-  focusOnSelect: true
-});
- 
-
-  
-
-  });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
