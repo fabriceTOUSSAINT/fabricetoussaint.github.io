@@ -24,8 +24,8 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "hooptee@theeventauthority.com";
-$Subject = "New HoopTee Message Received";
+$EmailTo = "aubasketball@theeventauthority.com";
+$Subject = "New AU Message Received";
 
 // prepare email body text
 $Body = "";

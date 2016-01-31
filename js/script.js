@@ -205,8 +205,8 @@ $('.over-block').click(function(){
     autoplay: true,
  arrows: false,
 asNavFor: '.slider-nav',
-autoplaySpeed: 0,
- speed: 12000,
+ autoplaySpeed: 0,
+ speed: 5000,
   cssEase: 'linear'
 
 
@@ -215,9 +215,13 @@ autoplaySpeed: 0,
      $('.slider-nav').slick({
   slidesToShow: 7,
   slidesToScroll: 1,
+
+  infinite: true,
+  autoplay: true,
   asNavFor: '.your-class',
   dots: false,
   centerMode: true,
+  variableWidth: true,
   arrows: false,
   focusOnSelect: true
 });

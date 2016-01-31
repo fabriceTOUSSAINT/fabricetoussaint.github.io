@@ -99,7 +99,7 @@
 
 
 
-<div class="your-class slider off-media-slider">
+<div class="your-class slider" id="here">
   <div><img src="gallerybooth/img/counau/1.jpg" alt="counselors"></div>
   <div><img src="gallerybooth/img/counau/2.jpg" alt="counselors"></div>
   <div><img src="gallerybooth/img/counau/4.jpg" alt="counselors"></div>
@@ -199,23 +199,11 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 <script>
   $(document).ready(function(){
 
-      $('.your-class').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true,
-  slidesToScroll: 1,
-    autoplay: true,
- autoplaySpeed: 4000,
- arrows: false
-
-});
 
       $(function () {
   $('[data-toggle="tooltip"]').tooltip()
