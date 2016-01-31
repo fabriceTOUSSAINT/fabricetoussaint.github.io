@@ -1182,6 +1182,9 @@ border-top-color:#ccc;}
     margin-top: 55px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .social-icons i, .social-icons div {
+  background-color:#fff !important;
+ }
  /* Header
 ==========================*/
   .navbar-brand {
@@ -1303,6 +1306,17 @@ border-top-color:#ccc;}
     max-height: 60px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .welcome h1, .founder h1 {
+    font-size: 2em;
+}
+.over-head h1 {
+    color: #fff;
+    font-size: 3em;
+    padding-top: 66.5px;
+}
+.step h2, .paypal {
+    text-align: center !important;
+}
   .foot-sponsor a img {
     max-height: 80px; }
 
@@ -1546,7 +1560,10 @@ border-top-color:#ccc;}
 .navbar-default .navbar-toggle .icon-bar {
 background-color: #D6D6D6;
 }
+.social-icons i, .social-icons div {
+  background-color:#fff !important;
  }
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .video-block i {
