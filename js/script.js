@@ -111,12 +111,12 @@ $(window).bind('hashchange', function() {
     }
 
     // If emailButton option is true, add button
-    if(this.options.emailButton === true){
-        this.emailButton = document.createElement("button");
-        this.emailButton.className = "contact-photog btn";
-        this.emailButton.innerHTML = "Contact Photogapher";
-        this.modal.appendChild(this.emailButton);
-    }
+    // if(this.options.emailButton === true){
+    //     this.emailButton = document.createElement("button");
+    //     this.emailButton.className = "contact-photog btn";
+    //     this.emailButton.innerHTML = "Contact Photogapher";
+    //     this.modal.appendChild(this.emailButton);
+    // }
 
     // If overlay is true, add one
     if (this.options.overlay === true) {
@@ -182,7 +182,7 @@ $(window).bind('hashchange', function() {
 
 $('.over-block').click(function(){
     var src = $(this).next().attr("src");
-    var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><a  class='btn contact-photog' id='mail-photo'>Contact Photogapher</a></div></div>";
+    var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><form class='form-inline'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' id='mail-photo'>Send</button></form></div></div>";
 
     var myModal = new Modal({
         content: modalContent

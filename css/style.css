@@ -1963,6 +1963,21 @@ div#here{
   margin-top:40px;
 }
 
+.modal-info .form-group {
+    padding: 0 10px;
+}
+.btn-primary {
+    color: #fff;
+    border-color: rgb(186, 69, 51);
+    background-color: rgb(186, 69, 51);
+    padding: 5px 50px;
+    transition: background-color ease .25s;
+}
+.btn-primary:hover{
+      color: #fff !important;
+    border-color: rgb(171, 91, 79) !important;
+    background-color: rgb(171, 91, 79) !important;
+}
 
 
 
