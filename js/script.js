@@ -182,7 +182,7 @@ $(window).bind('hashchange', function() {
 
 $('.over-block').click(function(){
     var src = $(this).next().attr("src");
-    var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><form class='form-inline'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' id='mail-photo'>Send</button></form></div></div>";
+    var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p class='col-sm-8'>Contact our photographer</p><form class='form-inline'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' id='mail-photo'>Send</button></form></div></div>";
 
     var myModal = new Modal({
         content: modalContent
