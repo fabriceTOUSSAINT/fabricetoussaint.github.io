@@ -1306,6 +1306,9 @@ border-top-color:#ccc;}
     max-height: 60px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #BA4533 !important;
+}
   .welcome h1, .founder h1 {
     font-size: 2em;
 }
@@ -2005,7 +2008,5 @@ div#here{
 
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #2a2a2a !important;
-    background-color: unset !important;
-    max-height: unset;
+    background-color: #BA4533 !important;
 }
