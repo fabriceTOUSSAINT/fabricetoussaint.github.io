@@ -2024,3 +2024,24 @@ div#here{
   height: 650px !important;
   margin-top: 0px !important;
 }
+
+.social_icons i.fa-twitter:hover {
+    color: #4099FF;
+}
+.social_icons i.fa-facebook:hover {
+    color: #3b5998;
+}
+.social_icons i.fa-instagram:hover {
+color:#3f729b;
+}
+
+.social-foot i.fa-instagram{
+  color:#3f729b;
+  transition:color ease .25s;
+}
+.social-foot i.fa-instagram:hover{
+  color:#2a2a2a;
+}
+.social-icons .fa {
+    padding-top: 12px;
+    }
