@@ -49,16 +49,7 @@ h5 {
   font-size: 2em; }
 
 .social-icons i, .social-icons div {
-  background-color: #AA8181;
-  width: 50px;
-  height: 50px;
-  margin-top: 5px;
-  margin-right: 2px;
-  font-size: 2.5em;
-  -webkit-transition: background-color .2s ease-out;
-  -moz-transition: background-color .2s ease-out;
-  -o-transition: background-color .2s ease-out;
-  transition: background-color .2s ease-out; }
+  font-size: 2.5em;}
 
 .social-icons .fa {
   padding-top: 15px;
@@ -78,7 +69,6 @@ h5 {
 
 .social-foot {
   margin-top: 18px;
-  border-left: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .social-icons a div img {
@@ -1078,9 +1068,6 @@ div#navbar {
 .social {
     margin-bottom: 5px;
 }
-.social-icons i, .social-icons div {
-    background-color: #fff;
-    }
     .social-foot .fa-facebook {
     color: #3b5998;
 }
@@ -1607,7 +1594,7 @@ color:#3f729b;
     .social-foot .fa-facebook:hover {
     color: #3b5998;
 }
-.social-icons i, .social-icons div {
+.social-icons i, .social-icons img {
     width: 35px;
     height: 29px;
     margin-top: 0;
@@ -1706,8 +1693,23 @@ ul.social_icons {
     margin: 0 auto;
     padding-left: 5%;
 }
-
-
+.social-icons i, .social-icons div{
+background-color: rgba(42, 42, 42, 0);
+background-color:unset;
+}
+.social-icons i:hover, .social-icons div:hover{
+  background-color: rgba(42, 42, 42, 0);
+background-color:unset;
+}
+.social-icons a:nth-child(3) div img{
+  padding-left: 0px;
+max-height: 29px;
+width: 29px;
+margin-bottom: 0;
+margin-top: 0px;
+padding-bottom: 0;
+transition: all ease .25s;
+}
 
 
 
@@ -2058,7 +2060,6 @@ h4.copy{
   /* footer
   ==========================*/
   .social-icons i, .social-icons div {
-    background-color: #AA8181;
     width: 40px;
     height: 40px;
     margin-right: 2px;
