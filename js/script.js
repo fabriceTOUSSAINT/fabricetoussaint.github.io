@@ -233,8 +233,9 @@ $('.your-class').click(function(){
   pauseOnHover: true,
   variableWidth: true,
   slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
 autoplaySpeed: 750,
+arrows: false,
  speed: 4000,
   cssEase: 'ease-in-out',
 asNavFor: '.slider-nav'

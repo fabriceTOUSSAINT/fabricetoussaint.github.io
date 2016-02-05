@@ -1725,7 +1725,7 @@ img.big {
 
 
 
-.scotch-modal.fade-and-drop.scotch-open.scotch-anchored {
+.scotch-modal {
     width: auto !important;
     height: auto !important;
 }
