@@ -55,6 +55,7 @@ $(window).bind('hashchange', function() {
 
   Modal.prototype.close = function() {
     var _ = this;
+
     this.modal.className = this.modal.className.replace(" scotch-open", "");
     this.overlay.className = this.overlay.className.replace(" scotch-open",
       "");
@@ -158,10 +159,14 @@ $(window).bind('hashchange', function() {
 
     if (this.closeButton) {
       this.closeButton.addEventListener('click', this.close.bind(this));
+      this.closeButton.addEventListener('click', playSlide.bind(this));
     }                                               
 
     if (this.overlay) {
+
       this.overlay.addEventListener('click', this.close.bind(this));
+      this.overlay.addEventListener('click', playSlide.bind(this));
+      
     }
     if(this.emailButton){
         this.emailButton.addEventListener('click', selectPhoto.bind(this));
@@ -181,6 +186,8 @@ $(window).bind('hashchange', function() {
                       
 
 $('.over-block').click(function(){
+   $('.slider').slick('slickPause');
+   console.log('here');
     var src = $(this).next().attr("src");
     var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><form class='form-inline' method='post' action='mailto:fabtoussaint@gmail.com'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' value='Send Email'>Contact Photographer</button></form></div></div>";
 
@@ -194,39 +201,108 @@ $('.over-block').click(function(){
 
     myModal.open();
 });
+$('.your-class').click(function(){
+ 
+  $('.your-class').slick('slickPause');
+});
+
 
       $('.your-class').slick({
   dots: false,
   infinite: true,
   slidesToShow: 1,
+  swipe:true,
   centerMode: true,
+  pauseOnHover: true,
   variableWidth: true,
   slidesToScroll: 1,
-    autoplay: true,
- arrows: false,
-asNavFor: '.slider-nav',
- autoplaySpeed: 0,
- speed: 5000,
-  cssEase: 'linear'
+    autoplay: false,
+autoplaySpeed: 750,
+ speed: 4000,
+  cssEase: 'ease-in-out',
+asNavFor: '.slider-nav'
 
 
 
 });
      $('.slider-nav').slick({
-  slidesToShow: 7,
-  slidesToScroll: 1,
 
+  slidesToShow: 1,
+  slidesToScroll: 1,
   infinite: true,
+  pauseOnHover: true,
+  centerMode: true,
   autoplay: true,
   asNavFor: '.your-class',
   dots: false,
-  centerMode: true,
   variableWidth: true,
   arrows: false,
+  autoplaySpeed: 750,
+ speed: 4000,
+  cssEase: 'ease-in-out',
   focusOnSelect: true
+});
+   
+        $(".group1").colorbox({rel:'group1'});
+        $(".group2").colorbox({rel:'group2', transition:"fade"});
+        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+        $(".group4").colorbox({rel:'group4', slideshow:true});
+        $(".ajax").colorbox();
+        $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+        $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+        $(".inline").colorbox({inline:true, width:"50%"});
+        $(".callbacks").colorbox({
+          onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+          onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+          onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+          onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+          onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+        });
+        $('.non-retina').colorbox({rel:'group5', transition:'none'})
+        $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+        
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function(){ 
+          $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+          return false;
+        });
+
+   
+$(".vimeo").colorbox({iframe:true, innerWidth:600, innerHeight:338});
+  });
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 
 
+
+$('#scroll').bind('mousewheel', function (e) {
+
+    $(this).scrollTop($(this).scrollTop() - e.originalEvent.wheelDeltaY);
+
+    //prevent page fom scrolling
+    return false;
+
+});
+
+
+
+
+      function playSlide(){
+        $('.slider').slick('slickPlay');
+      }
 
 function selectPhoto(){
 

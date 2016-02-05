@@ -855,7 +855,6 @@ a.dropdown-toggle {
   text-align: center; }
 
 i.fa.fa-asterisk {
-  font-size: 3em;
   color: #ccc; }
 
 .step h2 {
@@ -1090,13 +1089,16 @@ div#navbar {
             margin-top: 0;s
 }.couns-list h4 {
     color: #A2A2A2;
-}.couns-list i.fa.fa-asterisk {
+}i.fa.fa-asterisk {
     font-size: 1em;
     padding-left: 20px;
     vertical-align: super;
     padding-right: 5px;
 }
 
+.couns-list .animated {
+    padding: 0px 10px;
+}
 
 li.dropdown.active.open {
     height: 40px;
@@ -1104,9 +1106,11 @@ li.dropdown.active.open {
 .couns-list div.col-lg-3 h3 {
     text-align: center;
     background-color: #BA4533;
-    padding: 20px 0px;
-    font-size: 1em;
+    padding: 15px 5px;
+    margin: 7px -4px;
+    font-size: .8em;
     color: #FFF;
+    height: 50px;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -1459,7 +1463,7 @@ body
 
 
  .slick-slide img {
-    opacity: .6;
+    opacity: .8;
        transition: opacity ease .25s;
 }
  .slick-center img {
