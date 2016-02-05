@@ -25,6 +25,7 @@ $(window).bind('hashchange', function() {
     this.modal = null;
     this.overlay = null;
     this.emailButton = null;
+    this.orderPrint = null;
 
 
     // Determine proper prefix
@@ -36,8 +37,9 @@ $(window).bind('hashchange', function() {
       className: 'fade-and-drop',
       closeButton: true,
       emailButton: true,
+      orderPrint: true,
       content: "",
-      maxWidth: 600,
+      maxWidth: 1900,
       minWidth: 280,
       overlay: true
     }
@@ -119,6 +121,16 @@ $(window).bind('hashchange', function() {
     //     this.modal.appendChild(this.emailButton);
     // }
 
+
+
+    // If emailButton option is true, add button
+    if(this.options.orderPrint === true){
+        this.orderPrint = document.createElement("button");
+        this.orderPrint.className = "orderPrint btn";
+        this.orderPrint.innerHTML = "Order Print";
+        this.modal.appendChild(this.orderPrint);
+    }
+
     // If overlay is true, add one
     if (this.options.overlay === true) {
       this.overlay = document.createElement("div");
@@ -171,6 +183,9 @@ $(window).bind('hashchange', function() {
     if(this.emailButton){
         this.emailButton.addEventListener('click', selectPhoto.bind(this));
     }
+    if(this.orderPrint){
+      this.orderPrint.addEventListener('click',orderPrint.bind(this));
+    }
 
   }
 
@@ -189,8 +204,8 @@ $('.over-block').click(function(){
    $('.slider').slick('slickPause');
    console.log('here');
     var src = $(this).next().attr("src");
-    var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><form class='form-inline' method='post' action='mailto:fabtoussaint@gmail.com'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' value='Send Email'>Contact Photographer</button></form></div></div>";
-
+   // var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><form class='form-inline' method='post' action='mailto:fabtoussaint@gmail.com'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' value='Send Email'>Contact Photographer</button></form></div></div>";
+  var modalContent ="<img class='big' src='" + src +"'>";
     var myModal = new Modal({
         content: modalContent
     });
@@ -201,6 +216,8 @@ $('.over-block').click(function(){
 
     myModal.open();
 });
+
+
 $('.your-class').click(function(){
  
   $('.your-class').slick('slickPause');
@@ -243,48 +260,6 @@ asNavFor: '.slider-nav'
   focusOnSelect: true
 });
    
-        $(".group1").colorbox({rel:'group1'});
-        $(".group2").colorbox({rel:'group2', transition:"fade"});
-        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-        $(".group4").colorbox({rel:'group4', slideshow:true});
-        $(".ajax").colorbox();
-        $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-        $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-        $(".inline").colorbox({inline:true, width:"50%"});
-        $(".callbacks").colorbox({
-          onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-          onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-          onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-          onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-          onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-        });
-        $('.non-retina').colorbox({rel:'group5', transition:'none'})
-        $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
-        
-        //Example of preserving a JavaScript event for inline calls.
-        $("#click").click(function(){ 
-          $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-          return false;
-        });
-
-   
-$(".vimeo").colorbox({iframe:true, innerWidth:600, innerHeight:338});
-  });
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
 
 
 
@@ -297,6 +272,16 @@ $('#scroll').bind('mousewheel', function (e) {
 
 });
 
+function orderPrint(){
+var src = $('.big').attr("src");
+  var printContent = "<div class=modal-info><div class=row><p>Contact Our photographer</p><form class=form-inline method=post action=mailto:fabtoussaint@gmail.com><div class=form-group><input class=form-control id=inputName placeholder=Name></div><div class=form-group><input type=email class=form-control id=inputEmail placeholder=Email></div><button type=submit class='btn btn-primary' value='Send Email'>Click Here</button></form></div></div>";
+
+var printModal = new Modal({
+        content: printContent
+    });
+
+printModal.open();
+}
 
 
 

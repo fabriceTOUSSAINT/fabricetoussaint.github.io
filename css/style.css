@@ -1715,6 +1715,30 @@ padding-bottom: 0;
 transition: all ease .25s;
 }
 
+img.big {
+    max-height: 650px;
+    width: auto;
+}
+.scotch-modal.fade-and-drop.scotch-open {
+    top: 400px;
+  }
+
+
+
+.scotch-modal.fade-and-drop.scotch-open.scotch-anchored {
+    width: auto !important;
+    height: auto !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
