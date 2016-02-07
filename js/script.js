@@ -219,9 +219,10 @@ $('.over-block').click(function(){
 
 
 $('.your-class').click(function(){
- 
   $('.your-class').slick('slickPause');
 });
+
+
 
 
       $('.your-class').slick({
@@ -275,7 +276,7 @@ $('#scroll').bind('mousewheel', function (e) {
 
 function orderPrint(){
 var src = $('.big').attr("src");
-  var printContent = "<div class=modal-info><div class=row><p>Contact Our photographer</p><form class=form-inline method=post action=mailto:fabtoussaint@gmail.com><div class=form-group><input class=form-control id=inputName placeholder=Name></div><div class=form-group><input type=email class=form-control id=inputEmail placeholder=Email></div><button type=submit class='btn btn-primary' value='Send Email'>Click Here</button></form></div></div>";
+  var printContent = " <div class='modal-info'> <div class='row'> <p>Contact Our photographer</p><form class='form-inline' method='post' action='photo-form.php'> <div class='form-group'> <input type='text' class='form-control' name='name' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' name='email' placeholder='Email'> </div><input type='submit' class='btn btn-primary' value='Click Here'> </form> </div></div>";
 
 var printModal = new Modal({
         content: printContent

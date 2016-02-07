@@ -1730,7 +1730,17 @@ img.big {
     height: auto !important;
 }
 
-
+.orderPrint {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: #B94532;
+    color: #fff;
+    transition: all ease .25s;
+}
+.orderPrint:hover {
+    color: #fff;
+        background-color: #FB2200;
+}
 
 
 

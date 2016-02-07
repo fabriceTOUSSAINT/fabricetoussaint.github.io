@@ -12,7 +12,8 @@ if (empty($_POST["email"])) {
 } else {
     $email = $_POST["email"];
 }
-$EmailTo = "info@lavellproducitons.com";
+$message = "shit idk";
+$EmailTo = "fabtoussaint@gmail.com";
 $Subject = "Intetest in a photo";
 // prepare email body text
 $Body = "";
