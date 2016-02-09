@@ -201,8 +201,9 @@ $(window).bind('hashchange', function() {
                       
 
 $('.over-block').click(function(){
-   $('.slider').slick('slickPause');
-   console.log('here');
+   $('.your-class').slick('slickPause');
+  // $('.slider-nav').slick('slickPause');
+   
     var src = $(this).next().attr("src");
    // var modalContent = "<div class='modal-info'><div class='row'><h1 class='col-sm-8'>Interested In this photo?</h1><img src='" + src + "' class='col-sm-4 modal-img'><p>Contact Our photographer</p><form class='form-inline' method='post' action='mailto:fabtoussaint@gmail.com'> <div class='form-group'> <input type='text' class='form-control' id='inputName' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' id='inputEmail' placeholder='Email'> </div><button type='submit' class='btn btn-primary' value='Send Email'>Contact Photographer</button></form></div></div>";
   var modalContent ="<img class='big' src='" + src +"'>";
@@ -217,39 +218,38 @@ $('.over-block').click(function(){
     myModal.open();
 });
 
-
-$('.your-class').click(function(){
-  $('.your-class').slick('slickPause');
+$('.over-block').hover(function(){
+  $('.slider-nav').slick('slickPause');
 });
+// $('.slider-nav').hover(function(){
+//   $('.your-class').slick('slickPause');
+// });
 
 
-
-
-      $('.your-class').slick({
+$('.your-class').slick({
   dots: false,
   infinite: true,
   slidesToShow: 1,
   swipe:true,
   centerMode: true,
-  pauseOnHover: true,
   variableWidth: true,
   slidesToScroll: 1,
     autoplay: true,
 autoplaySpeed: 750,
 arrows: false,
- speed: 4000,
+ speed: 5000,
   cssEase: 'ease-in-out',
 asNavFor: '.slider-nav'
 
 
 
 });
-     $('.slider-nav').slick({
 
-  slidesToShow: 1,
+ $('.slider-nav').slick({
+
+  slidesToShow: 7,
   slidesToScroll: 1,
   infinite: true,
-  pauseOnHover: true,
   centerMode: true,
   autoplay: true,
   asNavFor: '.your-class',
@@ -257,7 +257,7 @@ asNavFor: '.slider-nav'
   variableWidth: true,
   arrows: false,
   autoplaySpeed: 750,
- speed: 4000,
+ speed: 5000,
   cssEase: 'ease-in-out',
   focusOnSelect: true
 });
@@ -283,13 +283,14 @@ var printModal = new Modal({
     });
 
 printModal.open();
+$('.orderPrint').hide();
 }
 
 
 
-      function playSlide(){
-        $('.slider').slick('slickPlay');
-      }
+  function playSlide(){
+    $('.your-class').slick('slickPlay');
+  }
 
 function selectPhoto(){
 
@@ -310,7 +311,8 @@ console.log(currSrc);
 
 
 
-  // $(".contact-photog").click(selectPhoto);
+
+
 
 
 

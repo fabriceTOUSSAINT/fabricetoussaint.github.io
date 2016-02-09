@@ -1149,7 +1149,7 @@ border-top-color:#ccc;}
 
 .slider-nav img {
     display: block;
-    height: 100px;
+    height: 75px;
     max-width: 100%;
     width: auto;
     margin: 0 auto;
@@ -1165,7 +1165,7 @@ border-top-color:#ccc;}
     font-size: 1.2em;
 }
 .slider-nav {
-  padding-top:40px;
+  padding-top:20px;
   padding-bottom:80px;
 }
 .your-class.slider.off-media-slider {
@@ -1552,7 +1552,7 @@ color:#3f729b;
 }
 .logo-block {
     text-align: center;
-    height: 100px;
+    height: 50px;
 }
 .logo-block img {
     height: 100px;
@@ -1741,17 +1741,33 @@ img.big {
     color: #fff;
         background-color: #FB2200;
 }
+.slick-slide:hover{
+  cursor:pointer;
+}
 
 
 
+.slider-nav img:hover{
+  opacity:1;
+}
 
 
+.scotch-modal.fade-and-drop.scotch-open {
+    top: 600px;
+    box-shadow: 0px 0px 40px #000;
+}
 
+.scotch-modal.fade-and-drop.scotch-open.scotch-anchored {
+    top: 400px;
+}
 
-
-
-
-
+.form-inline input.btn.btn-primary {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.modal-info p {
+    margin-top: 0;
+}
 
 /*================================================
 ==========***************************=============
@@ -1779,7 +1795,7 @@ img.big {
   /* dinners-block
   ==========================*/
   figure:hover > a .pos .title {
-    font-size: 1.8em; }
+    font-size: 1.8em !important; }
 
   /* about
   ==========================*/
@@ -1798,6 +1814,7 @@ img.big {
 
 
      }
+
 
 
 
@@ -1889,7 +1906,7 @@ img.big {
     font-size: 1.8em; }
 
   .photos figure > a .pos .title {
-    font-size: 1.8em; }
+    font-size: 1.8em !important; }
 
   /* ABOUT PAGE
   ===============*/
@@ -2077,13 +2094,13 @@ h4.copy{
   figure > a .pos .title {
     padding-bottom: 50%;
     padding-top: 50%;
-    font-size: 1.8em;
+    font-size: 1.8em !important;
     opacity: 1;
     z-index: 1;
     background-color: rgba(23, 75, 141, 0.3); }
 
   figure:hover > a .pos .title {
-    font-size: 1.8em; }
+    font-size: 1.8em !important; }
 
   /* about
   ==========================*/
@@ -2264,6 +2281,9 @@ background-color: #D6D6D6;
 .navbar .row {
   margin:0;
 }
+.header-reg h1 {
+    font-size: 2.5em;
+}
 }
 
 
@@ -2319,13 +2339,13 @@ background-color: #D6D6D6;
   figure > a .pos .title {
     padding-bottom: 50%;
     padding-top: 50%;
-    font-size: 1.1em;
+    font-size: 1.1em !important;
     opacity: 1;
     z-index: 1;
     background-color: rgba(23, 75, 141, 0.3); }
 
   figure:hover > a .pos .title {
-    font-size: 1.1em; }
+    font-size: 1.1em !important; }
 
   /* about
   ==========================*/
