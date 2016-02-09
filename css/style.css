@@ -1085,7 +1085,7 @@ div#navbar {
 .couns-list h1 {
     text-align: center;
     text-transform: uppercase;
-        font-size: 3em;
+        font-size: 2em;
             margin-top: 0;s
 }.couns-list h4 {
     color: #A2A2A2;
@@ -2010,7 +2010,7 @@ h4.copy{
   }
 
   .over-location h1 {
-    font-size: 3em; 
+    font-size: 2em; 
   }
 
   img.mobile-logo {
@@ -2063,7 +2063,7 @@ h4.copy{
     margin-top: -20px !important; }
 
   .header-game h1, .header-about h1, .header-media h1, .header-contact h1, .header-contribute h1 {
-    font-size: 3.5em; }
+    font-size: 3em; }
 
   .header-dinner h1 {
     font-size: 2.5em !important; }
@@ -2284,6 +2284,9 @@ background-color: #D6D6D6;
 .header-reg h1 {
     font-size: 2.5em;
 }
+.switch-button {
+    width: 300px;
+    }
 }
 
 
@@ -2308,6 +2311,9 @@ background-color: #D6D6D6;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .switch-button {
+    display:none;
+  }
   .video-block i {
     font-size: 5em;
     margin-bottom: 80px;
@@ -2365,7 +2371,7 @@ background-color: #D6D6D6;
     background-position: 50%; }
 
   .photos figure > a .pos .title {
-    font-size: 1em; } 
+    font-size: 1em !important; } 
   }
 
 
