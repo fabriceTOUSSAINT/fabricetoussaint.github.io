@@ -2288,6 +2288,21 @@ background-color: #D6D6D6;
 .switch-button {
     width: 300px;
     }
+    img.big {
+    max-width: 290px;
+    height: auto;
+}
+.scotch-modal.fade-and-drop.scotch-open {
+    max-width: 730px !important;
+    padding: 5px !important;
+    top: 325px !important;
+}
+button.orderPrint.btn {
+    font-size: .7em;
+    padding: 2px 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 }
 
 
