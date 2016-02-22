@@ -228,6 +228,7 @@ $('.over-block').hover(function(){
 
 $('.your-class').slick({
   dots: false,
+  lazyLoad: 'ondemand',
   infinite: true,
   slidesToShow: 1,
   swipe:true,
@@ -248,6 +249,7 @@ asNavFor: '.slider-nav'
  $('.slider-nav').slick({
 
   slidesToShow: 10,
+  lazyLoad: 'ondemand',
   slidesToScroll: 1,
   infinite: true,
   centerMode: true,
