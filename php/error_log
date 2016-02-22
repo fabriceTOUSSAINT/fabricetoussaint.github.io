@@ -1,0 +1,36 @@
+[18-Feb-2016 07:31:17 America/Denver] PHP Parse error:  syntax error, unexpected 'sleep' (T_STRING), expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 54
+[18-Feb-2016 07:47:41 America/Denver] PHP Parse error:  syntax error, unexpected '}' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 63
+[18-Feb-2016 07:48:47 America/Denver] PHP Notice:  Use of undefined constant clause - assumed 'clause' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 60
+[18-Feb-2016 08:06:07 America/Denver] PHP Notice:  Use of undefined constant www - assumed 'www' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 66
+[18-Feb-2016 08:06:07 America/Denver] PHP Notice:  Use of undefined constant google - assumed 'google' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 66
+[18-Feb-2016 08:06:07 America/Denver] PHP Notice:  Use of undefined constant com - assumed 'com' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 66
+[18-Feb-2016 16:29:24 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 70
+[18-Feb-2016 16:30:12 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home8/achieve6/public_html/fabricetoussaint.github.io/php/photo-form.php on line 70
+[21-Feb-2016 13:45:16 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 72
+[21-Feb-2016 13:52:05 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 72
+[21-Feb-2016 13:55:18 America/Denver] PHP Notice:  Undefined variable: EmailTo in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 60
+[21-Feb-2016 13:55:18 America/Denver] PHP Notice:  Undefined variable: Subject in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 60
+[21-Feb-2016 13:55:18 America/Denver] PHP Notice:  Undefined variable: Body in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 60
+[21-Feb-2016 13:55:18 America/Denver] PHP Notice:  Undefined variable: email in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 60
+[21-Feb-2016 13:55:18 America/Denver] PHP Notice:  Undefined variable: errorMSG in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 66
+[21-Feb-2016 13:57:19 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 13:59:42 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:16:53 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:18:00 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:18:00 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:18:03 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:18:03 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:18:03 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:18:03 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:19:16 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:19:16 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:19:18 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:19:18 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:19:19 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:19:19 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:20:13 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:20:48 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:21:13 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:22:36 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:24:07 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57
+[21-Feb-2016 14:24:44 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home8/achieve6/public_html/fabricetoussaint.github.io/php/form-process.php on line 57

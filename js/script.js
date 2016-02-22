@@ -247,7 +247,7 @@ asNavFor: '.slider-nav'
 
  $('.slider-nav').slick({
 
-  slidesToShow: 7,
+  slidesToShow: 10,
   slidesToScroll: 1,
   infinite: true,
   centerMode: true,
@@ -276,7 +276,9 @@ $('#scroll').bind('mousewheel', function (e) {
 
 function orderPrint(){
 var src = $('.big').attr("src");
-  var printContent = " <div class='modal-info'> <div class='row'> <p>Contact Our photographer</p><form class='form-inline' method='post' action='photo-form.php'> <div class='form-group'> <input type='text' class='form-control' name='name' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' name='email' placeholder='Email'> </div><input type='submit' class='btn btn-primary' value='Click Here'> </form> </div></div>";
+console.log(src);
+var printContent = "<div class='modal-info'> <div class='row'> <p>Contact Our photographer</p><form class='form-inline' method='post' action='php/photo-form.php'> <div class='form-group'> <input type='text' class='form-control' name='name' placeholder='Name'> </div><div class='form-group'> <input type='email' class='form-control' name='email' placeholder='Email'> </div><input type='submit' class='btn btn-primary' value='Click Here'> <input type='hidden' name='image' value='http://www.achievementsunlimited.com/"+src+"'> </form> <div id='succMessage'/>We will be in contact shortly</div></div></div>";
+//var printContent ="<form role=form id=photoForm data-toggle=validator class=shake><div class=row><div class='form-group col-sm-6'><label for=name class=h4>Name</label><input class=form-control id=name placeholder='Enter name' required data-error='NEW ERROR MESSAGE'><div class='help-block with-errors'></div></div><div class='form-group col-sm-6'><label for=email class=h4>Email</label><input type=email class=form-control id=email placeholder='Enter email' required><div class='help-block with-errors'></div></div></div><div class='help-block with-errors'></div><input type=submit class='btn btn-primary' value='Click Here'> <input type=hidden name=image value='http://www.achievementsunlimited.com/fabricetoussaint.github.io/"+src+"'><div id=msgSubmit class=h3 text-center hidden>successful</div><div class=clearfix></div></form>";
 
 var printModal = new Modal({
         content: printContent
@@ -292,22 +294,73 @@ $('.orderPrint').hide();
     $('.your-class').slick('slickPlay');
   }
 
-function selectPhoto(){
+  $("#phototForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitPForm();
+});
+  function submitPForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var image = $("#image").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "php/order-form.php",
+        data: "name=" + name + "&email=" + email + "&image=" + image,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+} 
 
-    console.log("TST");
-    $('.your-class').slick('slickPause', 'true');
-    var currSrc = $('.modal-img').attr('src');
-    var httpsAddr ="file:///Users/fabricetoussaint/Desktop/Code/projects/AU/site/";
-    var mail ="mailto:mechellelavell@me.com?subject=Interested%20In%20Photo&body=";
-    var fullSrc = httpsAddr.concat(currSrc);
-console.log(currSrc);
-    var yourMessage = "Hello, I'm interested in this photo: " + fullSrc;
-    var subject = "Interested in a photo";
-    document.location.href = "mailto:mechellelavell@me.com?subject="
-        + encodeURIComponent(subject)
-        + "&body=" + encodeURIComponent(yourMessage);
+  $("#contactForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
+  function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "php/form-process.php",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+}
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}
 
-  }
+
+
+// function selectPhoto(){
+
+//     console.log("TST");
+//     $('.your-class').slick('slickPause', 'true');
+//     var currSrc = $('.modal-img').attr('src');
+//     var httpsAddr ="file:///Users/fabricetoussaint/Desktop/Code/projects/AU/site/";
+//     var mail ="mailto:mechellelavell@me.com?subject=Interested%20In%20Photo&body=";
+//     var fullSrc = httpsAddr.concat(currSrc);
+// console.log(currSrc);
+//     var yourMessage = "Hello, I'm interested in this photo: " + fullSrc;
+//     var subject = "Interested in a photo";
+//     document.location.href = "mailto:mechellelavell@me.com?subject="
+//         + encodeURIComponent(subject)
+//         + "&body=" + encodeURIComponent(yourMessage);
+
+//   }
 
 
 

@@ -103,7 +103,7 @@
     <div class="col-sm-6 col-sm-offset-3">
     <div class="well" style="margin-top: 10%;">
     <h3>Contact us</h3>
-    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+    <form  action="php/form-process.php" method="POST" id="contactForm" data-toggle="validator" class="shake">
         <div class="row">
             <div class="form-group col-sm-6">
                 <label for="name" class="h4">Name</label>
@@ -124,16 +124,47 @@
 
 
 
-        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+        <button type="submit" value="send" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
         <div id="msgSubmit" class="h3 text-center hidden"></div>
-        <div class="clearfix"></div>
+        <div class="clearfix"></div> 
     </form>
     </div>
 </div>
+</div>
+</div>
+</div>
+<!-- End Contact Form  form  -->
 
-</div>
-</div>
-<!-- End Contact Form -->
+
+<!-- <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                          <div class="form-top">
+                          <h3>Contact us</h3>
+                            <p>Fill in the form below to send us a message:</p>
+                            </div>
+                            <div class="form-bottom contact-form">
+                          <form role="form" action="php/form-process.php" method="post">
+                            <div class="form-group">
+                              <label class="sr-only" for="contact-email">Email</label>
+                                <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="contact-subject">Subject</label>
+                                <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="contact-message">Message</label>
+                                <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
+                                <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                              </div>
+                              <button type="submit" class="btn">Send message</button>
+                          </form>
+                        </div>
+                        </div>
+                    </div> -->
 
 
 
@@ -178,6 +209,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/validator.min.js"></script>
 <script src="js/form-scripts.js"></script>
+  
 
 </body>
 </html>
