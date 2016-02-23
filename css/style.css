@@ -1654,7 +1654,7 @@ p.copyright {
 }
 
 .navbar {
-/*    background: linear-gradient( rgba(186, 69, 51, 1), rgba(186, 69, 51, .8) ), url('../top/text.jpg');*/
+
     min-height: 100px;
     border: none;
     -moz-box-shadow: 0px 1px 36px -6px #000;
