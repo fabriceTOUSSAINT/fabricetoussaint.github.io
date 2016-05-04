@@ -1,7 +1,0 @@
-#mozzila
-AddType audio/ogg oga ogg
-AddType video/ogg ogv
-AddType video/webm .webm
-#IE9
-AddType video/m4v m4v
-AddType video/mp4 mp4

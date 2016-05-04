@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Food & Drinks - Cheers!</title>
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "mobile/m_food.html";
+}
+
+</script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+  	<div class="navbar-header">
+  		<button type ="button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar" aria-expanded="false" aria-control= "navbar">
+  			<span class="sr-only">Toggle navigation</span>
+  			<span class="icon-bar"></span>
+  			<span class="icon-bar"></span>
+  			<span class="icon-bar"></span>
+  		</button>
+  		<a class ="navbar-brand" href="index.html">Fabrice Toussaint  |</a>
+  	</div>
+  	<div id = "navbar" class="navbar-collapse collapse">
+  			<ul class="nav navbar-nav">
+  				<li><a href="index.html#works">Work</a></li>
+  				<li><a href="http://fabricetoussaint.tumblr.com/">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>	
+
+			<ul class = "nav nav-icon navbar-nav navbar-right">
+				<li><a href="http://instagram.com/croissant__"><img src="images/instagram_icon.png"></a></li>
+				<li><a href= "http://twitter.com/fabricebt"><img src="images/twitter_icon.png"></a></li>
+				<li><a href="https://www.flickr.com/photos/fabricetoussaint/"><img src="images/flickr_icon.png"></a></li>
+				<li><a href="https://www.facebook.com/Fabricetoussaintphoto"><img src="images/facebook_icon.png"></a></li> 		 
+			</ul>
+		</div>
+  	</div>
+</nav>
+
+<img id="myImage" class="images" onclick="changeImage()"  src="images/fd/gq/1.jpg" >
+<div class="prevBtn">
+<button class="btn" onclick="prevImage()"> < </button>
+</div>
+
+<div class="nextBtn">
+<button class="btn " onclick="changeImage()"> > </button>
+</div>
+
+
+
+
+<script>
+  var data = [
+  "images/fd/gq/1.jpg",
+  "images/fd/gq/2.jpg",
+  "images/fd/gq/3.jpg",
+  "images/fd/partida/1.png",
+  "images/fd/partida/2.png",
+  "images/fd/partida/3.png",
+  "images/fd/partida/4.jpg",
+  "images/fd/partida/5.jpg",
+  "images/fd/vedge/1.jpg",
+  "images/fd/vedge/2.jpg",
+  "images/fd/vedge/3.jpg",
+  "images/fd/vedge/4.jpg",
+  "images/fd/villalobos/1.jpg",
+  "images/fd/villalobos/2.jpg",
+  "images/fd/villalobos/3.jpg",
+  "images/fd/villalobos/4.jpg"
+
+  ],
+  i,
+  len = data.length,
+  d = document;
+
+
+  for (i= 0; i < len; i++){
+    var path = data[i];
+    var img = d.createElement('img');
+    img.src = path;
+  }
+
+  i = 0;
+
+function changeImage(){
+  ++i;
+  if(i == len){
+      i = 0;
+    }
+    document.getElementById('myImage').src = data[i];
+}
+
+function prevImage(){
+   --i;
+    if(i == -1){
+       i = len-1;
+    }
+    document.getElementById('myImage').src = data[i];
+   
+}
+
+</script>
+
+</body>
+</html>
+
+
+ 
+
