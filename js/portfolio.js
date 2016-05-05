@@ -46,7 +46,7 @@ var tabList = [
     { 'id': 1, 'num': '1', 'name': 'Hooptee Celebrity Golf', 'initials': 'Ht', 'url': '/ht', 'photo': 'images/port-bg-ht.jpg' },
     { 'id': 2, 'num': '2', 'name': 'Achievements Unlimited', 'initials': 'Au', 'url': '/au', 'photo': 'images/port-bg-au.jpg' },
     { 'id': 3, 'num': '3', 'name': 'Crown City Crossfit', 'initials': 'Cc', 'url': '/cc', 'photo': 'images/port-bg-cc.jpg' },
-    { 'id': 4, 'num': '4','name': 'Photography Portfolio', 'initials': 'Ft', 'url': '/ft', 'photo': 'images/port-bg-ht.jpg' }
+    { 'id': 4, 'num': '4','name': 'Photography Portfolio', 'initials': 'Ft', 'url': '/ft', 'photo': 'images/port-square.jpg' }
 ];
 
 var Tab = React.createClass({
@@ -116,29 +116,93 @@ var Content = React.createClass({
     render: function(){
         return(
             <div className="content">
+            <div className="container">
+            <div className="row">
                 {this.props.currentTab === 1 ?
                 <div className="ht">
-                    <img src="http://memorial-hill-dev.flywheelsites.com/wp-content/uploads/2015/10/PT-square.jpg" />
+
+                   <div className="left col-sm-6">
+                    <div className="desktop">
+                    	<div className="wrapper">
+                    		<div className="holder">
+		                    	<img src="images/ht-ss.png" />
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+
+
+
+                	<div className="col-sm-6 desc">
+	                	<h1>Hooptee</h1>
+	                	<p>Full redesign & redevelopment of entire site.</p>
+	                	<p>set up hosting, paypal transactions, direct purchase button to photographer</p>
+	                	<a className="port-btn" href="http://hooptee.com/" target="_blank">Check it out yourself</a>
+                	</div>
                 </div>
                 :null}
 
                 {this.props.currentTab === 2 ?
                 <div className="au">
-                    <img src="http://memorial-hill-dev.flywheelsites.com/wp-content/uploads/2015/10/PT-square-4.jpg" />
+                      <div className="left col-sm-6">
+                    <div className="desktop">
+                    	<div className="wrapper">
+                    		<div className="holder">
+		                    	<img src="images/au-ss.png" />
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+                <div className="col-sm-6 desc">
+                	<h1>Achievements Unlimited</h1>
+	                	<p>Full redesign & redevelopment of entire site.</p>
+	                	<p>set up hosting, paypal transactions, direct purchase button to photographer</p>
+                	<a className="port-btn" href="http://achievementsunlimited.com/" target="_blank">Check it out yourself</a>
+                	</div>
                 </div>
                 :null}
 
                 {this.props.currentTab === 3 ?
                 <div className="cc">
-                    <img src="http://memorial-hill-dev.flywheelsites.com/wp-content/uploads/2015/10/PT-square-3.jpg" />
+                       <div className="left col-sm-6">
+                    <div className="desktop">
+                    	<div className="wrapper">
+                    		<div className="holder">
+		                    	<img src="images/cc-ss.png" />
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+                <div className="col-sm-6 desc">
+                	<h1>CrossFit Crown City</h1>
+	                	<p>Front-end/Wordpress</p>
+	                	<p>Helped design and developed homepage of site</p>
+
+					<a className="port-btn" href="http://crossfitcrowncity.com/" target="_blank">Check it out yourself</a>
+                	</div>
                 </div>
                 :null}
             
                 {this.props.currentTab === 4 ?
                 <div className="ft">
-                    <img src="http://memorial-hill-dev.flywheelsites.com/wp-content/uploads/2015/10/PT-square-2.jpg" />
+                        <div className="left col-sm-6">
+                    <div className="desktop">
+                    	<div className="wrapper">
+                    		<div className="holder">
+		                    	<img src="images/photo-port.png" />
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+                <div className="col-sm-6 desc">
+                	<h1>photography Portfolio</h1>
+                	<p>Personal photography portfolio</p>
+				<a className="port-btn" href="photoPort.html">Check it out yourself</a>  
+				              	</div>
                 </div>
                 :null}
+            </div>
+            </div>
             </div>
         );
     }

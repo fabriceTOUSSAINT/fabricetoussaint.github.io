@@ -27,22 +27,16 @@ h2{
   height: 950px;
   position: relative;
 }
-.info{
-  height: 245px;
-  text-align: center;
-  font-size: 4rem;
-  font-color: #242424;
-  font-weight: 300;
 
-}
 
 .open-photo > img {
-display: block;
-position: relative;
- margin-left: auto;
-margin-right: auto;
-top: 30%;
+    display: block;
+    position: absolute;
+    width: 150px;
+    margin-left: 10%;
+    bottom: 50px !important;
 }
+
 
 .main{
   height: auto;
@@ -72,6 +66,10 @@ top: 30%;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+      background-position-y: -150px;
+}
+.photo.open-photo {
+    height: 65vh;
 }
 
 .feature{
@@ -469,7 +467,6 @@ figure:hover > a .parent .title {
 }
 .pt-button:last-child {
     padding: 0;
-    margin-bottom: 70px;
 }
 
 
@@ -478,15 +475,113 @@ figure:hover > a .parent .title {
         portfolio
         */
 
+.desktop.col-sm-6 {
+    background-image: url('../images/imacBG.png');
+}
+#workContainer .content {
+    padding: 60px 0;
+}
+.desktop img {
+    width: 456px;
+}
+
+
+.desktop {
+    background-image: url('../images/imacBG.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 400px;
+    width: 550px !important;
+}
 
 
 
+.desktop .holder {
+    width: 456px;
+    height: 286px;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 23px;
+    left: 23px;
+}
+a.port-btn {
+    background: #B99734;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    width: 275px;
+    margin: 25px auto;
+    transition: all ease .25s;
+}
+.desc {
+    text-align: center;
+    padding: 75px 0;
+}
+
+a.port-btn:hover {
+    background: #271F30;
+    text-decoration: none;
+}
 
 
+.open-photo .info {
+    width: 100% !important;
+    color: #fff;
+    padding-left: 175px;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.open-photo > img, .open-photo .info {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    margin-left: 10%;
+    bottom: 50px !important;
+}
+
+.info span {
+    display: inline-block;
+    position: absolute;
+    bottom: -55px !important;
+}
+h1.header {
+    padding-top: 40px;
+}
 /*******************************
         MEDIA QUERIES
 ********************************/
 
+
+
+@media only screen and (max-width: 992px){
+
+.desktop{
+  min-height: 300px;
+}
+
+.desktop .holder {
+    width: 343px;
+    height: 215px;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 17px;
+    left: 17px;
+}
+.desktop img {
+    width: 343px;
+}
+
+.desc {
+    text-align: center;
+    padding: 20px 0;
+    width: 40%;
+    margin-left: 10%;
+}
+}
 @media only screen and (max-width: 784px) {
 
 .pos h1 {
@@ -496,6 +591,12 @@ figure:hover > a .parent .title {
 .title p {
     margin: 0;
     font-size: 8.8vw;
+}
+.desc {
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    margin-left: 0;
 }
 
 .pos h5 {
@@ -542,13 +643,13 @@ a.expand{
   width:initial;
 }
 
-.info {
+/*.info {
   height: 245px;
   text-align: center;
   font-size: 4rem;
   font-color: #242424;
   font-weight: 300;
-}
+}*/
 .info > span > br {
   display: none;
 

@@ -59,8 +59,11 @@
 </nav>
 
 
-<div class="photo open-photo" data-stellar-background-ratio ="0.4">
-   <img  data-stellar-ratio="0.6" src = "images/ftLogo.png" alt="Logo">
+<div class="photo open-photo" >
+   <img  src = "images/ftLogo.png" alt="Logo">
+   <div class="info" >
+       <span> DEVELOPER | PHOTOGRAPHER | EXPLORER  <br><br></span>
+   </div>
  
 </div>
  
@@ -70,98 +73,40 @@
 
 <a name="work"></a>
 <a name="works"></a>
-<div class="divider"></div>
-<div class="info" >
- <span> DEVELOPER | PHOTOGRAPHER | EXPLORER  <br><br></span>
- <div>
-<br>Work</div>
-</div>
+<h1 class="header">Works</h1>
 
 
- 
 
    <div id="workContainer"></div>
-margin-left:-100px;
-
-
-
-
-<div class="spacer"></div>
-
-<!-- main content -->
-
-<div id="effect-6" class="effects clearfix" style="max-width:100%;">
-
-    <div class="img link-container">
-
-        <img src="images/fashion/bggKnits/thumb.JPG" alt="Fashion">
-        <div class="overlay">
-             <a href="fashion.html">
-            <span class="link-block"></span>
-        </a>
-            <a href="fashion.html" class="expand">FASHION</a>
-        </div>
-
+   <div class="footer">
+      <p>All photographs & Works © 2014-2016 Fabrice Toussaint </p> 
     </div>
-
-    <div class="img link-container">
-        <img src="images/fd/partida/thumb.png" alt="FOOD/DRINK">
-        <div class="overlay">
-            <a href="fd.html">
-            <span class="link-block"></span>
-        </a>
-            <a href="fd.html" class="expand">FOOD/DRINK</a>
-        </div>
-    </div>
-    <div class="img link-container">
-        <img src="images/recent/1.jpg" alt="Recent">
-        <div class="overlay">
-            <a href="recent.html">
-            <span class="link-block"></span>
-        </a>
-            <a href="recent.html" class="expand">RECENT</a>
-        </div>
-    </div>
-    <div class="img link-container">
-        <img src="images/travel/thumb.jpg" alt="TRAVEL">
-        <div class="overlay">
-            <a href="travel.html">
-            <span class="link-block"></span>
-        </a>
-            <a href="travel.html" class="expand">TRAVEL</a>
-            
-        </div>
-    </div>
-    <div class="img link-container">
-        <img src="images/film/3.jpg" alt="FILM">
-        <div class="overlay">
-            <a href="film.html">
-            <span class="link-block"></span>
-        </a>
-            <a href="film.html" class="expand">FILM</a>
-            
-        </div>
-    </div>
-    <div class="img link-container footer">
-        <img src="images/projects/thumb.jpg" alt="PROJECTS">
-        <div class="overlay">
-            <a href="#projects">
-            <span class="link-block"></span>
-        </a>
-            <a href="#Projects" class="expand">PROJECTS:<BR><BR> COMING SOON</a>
-            
-        </div>
-    </div>
-    <div class="footer">
-      <p>All photographs © 2014-2015 Fabrice Toussaint </p> 
-    </div>
-</div>
-
-
-
 
 
 <script src="js/style.js"></script>
+<script type='text/javascript'>
+
+
+
+function autoScroll() {
+  jQuery('.first-port .desktop .holder').animate({
+    scrollTop: 1813}, 80000);
+};
+
+(function($){
+
+    $(document).ready(function(){
+        
+
+  autoScroll();
+  jQuery('.first-port .desktop .holder').mouseover(function() {$(this).stop()})
+
+    });
+    
+}(jQuery));
+
+
+</script>
 </body>
 </html>
 
