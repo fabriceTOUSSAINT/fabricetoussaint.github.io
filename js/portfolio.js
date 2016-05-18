@@ -90,7 +90,7 @@ var Tabs = React.createClass({
         return (
 
 
-<div className={'container pt-wrap'}>
+<div className={'container pt-wrap'} href={'#works'}>
     <div className={'row'}>  
                 {this.props.tabList.map(function(tab) {
                     return (
