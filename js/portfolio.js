@@ -91,7 +91,6 @@ var Tabs = React.createClass({
 
 
 <div className={'container pt-wrap'}>
-<a  href={'#works'}>
     <div className={'row'}>  
                 {this.props.tabList.map(function(tab) {
                     return (
@@ -108,7 +107,6 @@ var Tabs = React.createClass({
                     );
                 }.bind(this))}
 	  </div>
-      </a>
 </div>
         );
     }
