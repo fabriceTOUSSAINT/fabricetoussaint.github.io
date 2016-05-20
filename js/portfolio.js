@@ -170,14 +170,14 @@ var Content = React.createClass({
                     		<div className="holder">
 		                    	<img src="images/cc-ss.png" />
 		                    </div>
-		                </div>
+		                	</div>
 		            </div>
 		        </div>
                 <div className="col-sm-6 desc">
                 	<h1>CrossFit Crown City</h1>
 	                	<p>Front-end/Wordpress</p>
-	                	<p>Helped design and developed homepage of site</p>
-
+	                	<p>Designed and Developed Homepage</p>
+				
 					<a className="port-btn" href="http://crossfitcrowncity.com/" target="_blank">Check it out yourself</a>
                 	</div>
                 </div>
