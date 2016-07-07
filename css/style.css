@@ -551,9 +551,7 @@ h1.header {
     padding-top: 40px;
 }
 
-div#navbar {
-    background-color: snow;
-}
+
 /*******************************
         MEDIA QUERIES
 ********************************/
@@ -586,7 +584,7 @@ div#navbar {
     margin-left: 10%;
 }
 }
-@media only screen and (max-width: 784px) {
+@media only screen and (max-width: 768px) {
 
 .pos h1 {
     font-size: 63vw;
@@ -611,6 +609,9 @@ ul.nav.nav-icon.navbar-nav.navbar-right {
 }
 ul.nav.nav-icon.navbar-nav.navbar-right li {
     display: inline-block;
+}
+div#navbar {
+    background-color: snow;
 }
 }
 
