@@ -550,6 +550,10 @@ a.port-btn:hover {
 h1.header {
     padding-top: 40px;
 }
+
+div#navbar {
+    background-color: snow;
+}
 /*******************************
         MEDIA QUERIES
 ********************************/
@@ -601,6 +605,12 @@ h1.header {
 
 .pos h5 {
     font-size: 6vw;
+}
+ul.nav.nav-icon.navbar-nav.navbar-right {
+    text-align: center;
+}
+ul.nav.nav-icon.navbar-nav.navbar-right li {
+    display: inline-block;
 }
 }
 
