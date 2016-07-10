@@ -1,11 +1,14 @@
 
 	$(function(){
-		$.stellar({
-			horizontalScrolling: false
-		});
-	
+		var waypoint = new Waypoint({
+		  element: document.getElementById('logo'),
+		  handler: function(direction) {
+		    notify('Logo is 70px from the top of the window')
+		  },
+		  offset: 70
+		})
 
-   
+
         if (Modernizr.touch) {
             // show the close overlay button
             $(".close-overlay").removeClass("hidden");
@@ -33,16 +36,16 @@
                 $(this).removeClass("hover");
             });
         }
-  
 
 
 
 
-    
+
+
         $("img.lazy").lazyload({
             effect: "fadeIn"
         });
-  
+
 
 
 function scrollToAnchor(aid){

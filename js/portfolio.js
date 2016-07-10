@@ -54,17 +54,17 @@ var Tab = React.createClass({
         e.preventDefault();
         this.props.handleClick();
     },
-    
+
     render: function(){
         return (
         	<div className={'pt-button col-xs-12 col-sm-3 pt-hover wow fadeIn'}>
               <figure>
                 <a onClick={this.handleClick} href={this.props.url} >
-              
+
 
                 <img src={this.props.photo} />
 
-                <div className={'parent'}> 
+                <div className={'parent'}>
 		              <div className={'title'}>
 		                  <div className={'pos'}>
 			                  <h5>{this.props.num}</h5>
@@ -85,13 +85,13 @@ var Tabs = React.createClass({
     handleClick: function(tab){
         this.props.changeTab(tab);
     },
-    
+
     render: function(){
         return (
 
 
 <div className={'container pt-wrap'}>
-    <div className={'row'}>  
+    <div className={'row'}>
                 {this.props.tabList.map(function(tab) {
                     return (
                         <Tab
@@ -177,12 +177,12 @@ var Content = React.createClass({
                 	<h1>CrossFit Crown City</h1>
 	                	<p>Front-end/Wordpress</p>
 	                	<p>Designed and Developed Homepage</p>
-				
+
 					<a className="port-btn" href="http://crossfitcrowncity.com/" target="_blank">Check it out yourself</a>
                 	</div>
                 </div>
                 :null}
-            
+
                 {this.props.currentTab === 4 ?
                 <div className="ft">
                         <div className="left col-sm-6">
@@ -195,9 +195,9 @@ var Content = React.createClass({
 		            </div>
 		        </div>
                 <div className="col-sm-6 desc">
-                	<h1>photography Portfolio</h1>
+                	<h1>Photography Portfolio</h1>
                 	<p>Personal photography portfolio</p>
-				<a className="port-btn" href="photoPort.html">Check it out yourself</a>  
+				<a className="port-btn" href="photoPort.html">Check it out yourself</a>
 				              	</div>
                 </div>
                 :null}
@@ -209,7 +209,7 @@ var Content = React.createClass({
 });
 
 var App = React.createClass({
-    getInitialState: function () {        
+    getInitialState: function () {
         return {
             tabList: tabList,
             currentTab: 1
@@ -229,7 +229,7 @@ var App = React.createClass({
                     tabList={this.state.tabList}
                     changeTab={this.changeTab}
                 />
-                
+
             </div>
         );
     }
