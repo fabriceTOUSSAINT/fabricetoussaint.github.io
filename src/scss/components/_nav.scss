@@ -145,6 +145,7 @@ height:50px;
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
+      cursor:pointer;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;

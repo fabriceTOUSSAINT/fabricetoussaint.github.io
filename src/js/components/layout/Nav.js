@@ -54,6 +54,8 @@ export default class Nav extends React.Component{
           }
         });
       });
+
+
       $(".work a").click(function(){
           $('html, body').animate({
               scrollTop: $("#content").offset().top
@@ -104,12 +106,12 @@ export default class Nav extends React.Component{
               <li className="about">
                 <a onClick={this.toggleCollapse.bind(this)}>About</a>
               </li>
-              <li class={blogClass}>
-                <Link to="blog" onClick={this.toggleCollapse.bind(this)}>Blog</Link>
-              </li>
               <li className="contact">
                 <a onClick={this.toggleCollapse.bind(this)}>Contact</a>
               </li>
+              {/* <li class={blogClass}>
+                 <Link to="blog" onClick={this.toggleCollapse.bind(this)}>Blog</Link>
+              </li>*/}
 
 
 
