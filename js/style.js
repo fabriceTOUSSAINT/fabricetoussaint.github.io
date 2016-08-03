@@ -32,14 +32,14 @@ if (is_safari || is_explorer){
 }
 
 $(".about.parallax").parallax({
-  imageSrc: '/images/fab.jpg',
+  imageSrc: 'images/fab.jpg',
   positionY: 'bottom',
   iosFix: true,
   androidFix: true
 });
 
 $(".parallax").parallax({
-  imageSrc: '/images/hero-bg.jpg',
+  imageSrc: 'images/hero-bg.jpg',
   positionY:'-150px',
   iosFix: true,
   androidFix: true
