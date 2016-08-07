@@ -26,12 +26,12 @@ $('#hthird').addClass("animated fadeInLeft");
 $('#hfourth').addClass("animated fadeInLeft");
 
 
-if (is_safari || is_explorer){
+if (is_safari || is_explorer || ($(window).width() < 680)){
   $("#hero").removeClass("parallax").addClass("safariHero");
   $("#about").removeClass("parallax").addClass("safariAbout");
 }
 
-$(".about.parallax").parallax({
+$("div.about").parallax({
   imageSrc: 'images/fab.jpg',
   positionY: 'bottom',
   iosFix: true,
